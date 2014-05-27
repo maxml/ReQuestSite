@@ -29,7 +29,7 @@ function linkClicked(id) {
 
 function showDetails() {
     $('#main').empty();
-    $('#main').load('form/details.html #details_form > *');
+    $('#main').load('../form/details.html #details_form > *');
 
     console.log(vacancy.get("expire"));
     setTimeout(function() {
@@ -49,6 +49,6 @@ function showDetails() {
 
 function getRespondForm() {
     $('#main').empty();
-    $('#main').load('form/new_respond.html #respond_form > *');
+    $('#main').load('../form/new_respond.html #respond_form > *');
 
 }

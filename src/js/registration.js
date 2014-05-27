@@ -22,6 +22,7 @@ function signinCallback(authResult) {
         $('#email').trigger('contentchanged');
         $('#name').trigger('contentchanged');
         $('#pic').trigger('contentchanged');
+        
     } else if (authResult[ 'error' ]) {
         console.log('Sign-in state: ' + authResult[ 'error' ]);
     }
@@ -39,7 +40,7 @@ function disconnectUser(access_token) {
         contentType: "application/json",
         dataType: 'jsonp',
         success: function(nullResponse) {
-            alert('This app has had its G+ access revoked');
+            alert('Вы вышли из системы! Ждем Вас еще!');
         },
         error: function(e) {
             console.log(e);
