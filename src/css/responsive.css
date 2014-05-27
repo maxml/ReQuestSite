@@ -13,7 +13,7 @@ screen and (max-device-width: 480px){
 @media screen and (max-width: 768px),
 screen and (max-width: 1200px){
     #header{
-
+        /* ... */
     }
 }
 
