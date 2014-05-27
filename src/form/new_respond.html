@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/list.css">
+    </head>
+    <body>
+        <div id="respond_form" >
+            <form class="new_vacancy_form1">
+                <fieldset style="border: 0; padding: 20px">
+                    <legend class="legend_new_vacancy">Cоздания ответа на вакансию</legend>
+
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="vacancyName" class="demanded" style="float:left; margin-right:10px; padding:5px 0;"> Название вакансии*: </label>
+                        <input style="float: right; width:60%;" type="text" name="vacancyName" id="vacancyName" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="companyName" style="float:left; margin-right:10px; padding:5px 0;"> 
+                            Название компании: 
+                        </label>
+                        <input style="float: right; width:60%;" type="text" name="companyName" id="companyName" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="description" class="demanded" style="float:left; margin-right:10px; padding:5px 0;"> 
+                            Описание вакансии*: 
+                        </label>
+                        <textarea style="float: right; width: 60%" id="description" name="description" rows="4" cols="20" ></textarea>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="demands" style="float:left; margin-right:10px; padding:5px 0;"> 
+                            Требования: 
+                        </label>
+                        <textarea style="float: right; width: 60%" id="demands" name="demands" rows="4" cols="20" ></textarea>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="terms" style="float:left; margin-right:10px; padding:5px 0;"> 
+                            Условия: 
+                        </label>
+                        <textarea style="float: right; width: 60%" id="terms" name="terms" rows="4" cols="20" ></textarea>
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="salary" style="float:left; margin-right:10px; padding:5px 0;">
+                            Зарплата:
+                        </label>
+                        <input style="float: right; width:60%;" type="text" name="salary" id="salary" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="city" style="float:left; margin-right:10px; padding:5px 0;">
+                            Город:  
+                        </label>
+                        <input style="float: right; width:60%;" type="text" name="city" id="city" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="address" style="float:left; margin-right:10px; padding:5px 0;">
+                            Адрес:  
+                        </label>
+                        <input style="float: right; width:60%;" type="text" name="address" id="address" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+
+                    <input type="submit" value="Далее" id="new_vacancy_form1" style="float: right" onclick="getFirstData()"/>
+                </fieldset>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="js/newvacancy.js"></script>
+    </body>
+</html>

@@ -1,0 +1,355 @@
+@font-face {
+    font-family:'HelveticaNeueCyr-Black';
+    src: url('font/HelveticaNeueCyr-Black.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-BlackItalic';
+    src: url('font/HelveticaNeueCyr-BlackItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Bold';
+    src: url('font/HelveticaNeueCyr-Bold.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-BoldItalic';
+    src: url('font/HelveticaNeueCyr-BoldItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Heavy';
+    src: url('font/HelveticaNeueCyr-Heavy.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-HeavyItalic';
+    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Italic';
+    src: url('font/HelveticaNeueCyr-Italic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Light';
+    src: url('font/HelveticaNeueCyr-Light.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-LightItalic';
+    src: url('font/HelveticaNeueCyr-LightItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Medium';
+    src: url('font/HelveticaNeueCyr-Medium.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-MediumItalic';
+    src: url('font/HelveticaNeueCyr-MediumItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Roman';
+    src: url('font/HelveticaNeueCyr-Roman.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Thin';
+    src: url('font/HelveticaNeueCyr-Thin.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-ThinItalic';
+    src: url('font/HelveticaNeueCyr-ThinItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-UltraLight';
+    src: url('font/HelveticaNeueCyr-UltraLight.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-UltraLightItalic';
+    src: url('font/HelveticaNeueCyr-UltraLightItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-HeavyItalic';
+    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-HeavyItalic';
+    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
+}
+
+body{
+    background-color:F0EFF4;
+}
+#col1,#profile {
+    background-color:white;
+    font-family: Verdana, Arial, sans-serif; 
+    font-weight: bold; 
+    font-size: 80%; 
+    color: white; 
+    width: 20%; 
+    padding: 5px;  
+    float: left;
+    height: 100vw;
+}
+#main{
+    font-family: Verdana, Arial, sans-serif; 
+    font-weight: bold; 
+    font-size: 80%; 
+    background-color:#F0EFF5; 
+    width: 55%; 
+    padding: 5px;  
+    float: left;
+    height: 100%; 
+} 
+#col1, #main, #profile { 
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 100%; 
+    font-weight: normal; 
+    color: black; 
+    height: 100%;
+}
+.tr { 
+    clear: both;
+    height: 100%; 
+}
+.new_vacancy{
+    text-align:center; 
+    padding: 1vw; 
+    border:solid 0.1vw black; 
+    border-radius: 1.5vw; 
+    color:black; 
+    background:white;
+    position:absolute;
+    top: 14.5vw;
+    width: 14vw;
+    left: 3vw;
+    font-family: HelveticaNeueCyr-Light;
+    font-size: 1.3vw;
+}
+.new_vacancy:hover{
+    color:#CC0033;
+    border-color: #CC0033;
+}
+
+#allVac, #mineVac{
+    text-align: center;
+    border: solid 0.1vw #dcdcdc;
+    width: 6vw;
+    height: 2.5vw;
+    position: absolute;
+    float: left;
+    text-align: center;
+    font-size: 1.2vw;
+    padding-top: 0.9vw;
+    color: black;
+    font-family: HelveticaNeueCyr-Light;
+}
+#allVac{
+    border-radius: 1.5vw 0 0 1.5vw;
+    top: 30.5vw;
+    left: 3vw;    
+}
+
+#mineVac{
+    border-radius: 0 1.5vw 1.5vw 0;   
+    top: 30.5vw;
+    left: 9vw;
+}
+
+.checkedVac{
+    background-color: #F0EFF5;
+
+}
+
+
+.vacancy{
+    width: 50vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 2vw;
+    margin: 2vw;
+}
+.vacancy_title{
+    color:#000000;
+    size: 5vw;
+    padding-top: 2vw;
+    font-family: HelveticaNeueCyr-Light;
+    padding-left:4vw;
+    margin:0;
+}
+
+.logo{
+    margin-left: 2vw;
+}
+.vacancy_reward{
+    color:#CC0033;
+    font-size:2.5vw;
+    font-family:HelveticaNeueCyr-Light;
+    padding-top:1.6vw;
+    padding-left:43vw;
+    margin:0;
+}
+.vacancy_salary{
+    position:absolute;
+    font-family:HelveticaNeueCyr-Light;
+    font-size:1vw;
+    color:black;
+    padding-top: 3vw;
+    padding-left:4vw;
+}
+.vacancy_company{
+    position:absolute;
+    font-family:HelveticaNeueCyr-UltraLight;
+    font-size:1vw;
+    color:#333333;
+    padding-top: 3vw;
+    padding-left:16vw;
+}
+.menu{
+    position:absolute;
+    top: 18.5vw;
+    color:black;
+    font-size: 1.5vw;
+    font-family:HelveticaNeueCyr-Medium;
+    list-style-type:none;
+}
+
+.main_menu{
+    color:black;
+    font-family:HelveticaNeueCyr-Medium;
+    text-decoration: none;
+    padding-left: 0.5vw;
+}
+.main_menu:hover{
+    color:#C14249;
+}
+
+#profile .info{
+    display: none;
+}
+.demanded{
+    color: #CC0033;
+}
+
+
+/** Google+ Button */
+#signinButton.demo {
+    padding: 15px;
+    margin: 60px;
+    cursor: pointer;
+    line-height: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+#signinButton.demo .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url('../img/list/btn_icons_sprite.png') transparent 0 -40px no-repeat;
+}
+#signinButton.demo:hover {
+    background-color: #cc3732;
+    color: #fff;
+    border: #dd4b39;
+}
+#myBtn.demo:hover .icon {
+    background: url('../img/list/btn_icons_sprite.png') transparent 0 0px no-repeat;
+}
+
+/** New Vacancy Form */
+.vacancy_link{
+    color:#CC0033;
+    font-size:1.5vw;
+    font-family:HelveticaNeueCyr-Light;
+    margin:0;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hiddenVacancy{
+    display: none;
+}
+
+.legend_new_vacancy{
+    text-align: center; font-size: 2vw; color: #CC0033; font-family: HelveticaNeueCyr-Medium; 
+    margin-top: 1vw;
+}
+
+.new_vacancy_form1{
+    width: 50vw;
+    height: 45vw;
+    background-color: white;
+    border-radius: 2vw;
+    margin: 2vw;   
+}
+.new_vacancy_form2{
+    width: 50vw;
+    height: 20vw;
+    background-color: white;
+    border-radius: 2vw;
+    margin: 2vw;   
+}
+
+.info{
+    top: 3vw;
+    left: 80vw;
+    position: absolute;
+    text-align: center;
+}
+
+#pic{
+    position: relative;
+    margin-left: 3vw; 
+    background: #fff;
+    width: 8vw; /* ������ */
+    height: 8vw; /* ������ */
+    border-radius: 50%;
+}
+#pic img{
+    display: block;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 50%;
+}
+
+#name{
+    font-family: HelveticaNeueCyr-Medium;
+    color: #CC0033;
+}
+
+#email{
+    font-family: HelveticaNeueCyr-Light;
+    font-size: 1vw;
+    color: black;
+}
+
+#userDetails{
+    text-align:center; 
+    padding: 1vw; 
+    border:solid 0.1vw black; 
+    border-radius: 1.5vw; 
+    color:black; 
+    background:white;
+    position:relative;
+    width: 10vw;
+    font-family: HelveticaNeueCyr-Light;
+    font-size: 1vw;
+}
+
+#userDetails:hover{
+    border:solid 0.1vw #CC0033;
+    color: #CC0033;
+}
