@@ -1,0 +1,115 @@
+
+/* Disable iOS/WinMobile font size change */
+@media screen and (max-width: 600px), 
+screen and (max-device-width: 480px){
+    html{
+        -ms-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+/* Blog style ... in process */
+@media screen and (max-width: 768px),
+screen and (max-width: 1200px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+
+/* 980px */
+
+@media screen and(max-width: 980px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+
+/* Mini Tablet horizontal specific styles  and (orientation : landscape) */
+
+@media only screen and (max-width : 800px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* Tablet vertical specific styles and (orientation : portrait)*/
+
+@media only screen and (max-width : 768px)  {
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* 650 */
+
+@media screen and(max-width: 650px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* Mini Tablet - Portrait */
+
+@media only screen and (max-width : 600px) {
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* iPhone 5 Horizontal */
+
+@media only screen and (max-width : 568px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* 520 */
+
+@media screen and(max-width: 520px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* All Cell Phones Horizontal */
+
+@media only screen and (max-width : 480px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* 360*/
+
+@media only screen and (max-width : 360px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* All Cell Phones Vertical */
+
+@media only screen and (max-width : 320px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* ... */
+
+@media screen and (max-width: 1200px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
+
+/* min-width: 1200 */
+
+@media screen and(min-width: 1200px){
+    .tr #col1 b img{
+        max-width: 100% 
+    }
+}
