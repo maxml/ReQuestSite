@@ -130,16 +130,19 @@ body{
     border-radius: 1.5vw; 
     color:black; 
     background:white;
-    position:absolute;
     top: 14.5vw;
     width: 14vw;
     left: 3vw;
     font-family: HelveticaNeueCyr-Light;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
+    margin-left: 2.2vw;
 }
 .new_vacancy:hover{
     color:#CC0033;
     border-color: #CC0033;
+}
+#allVac{
+    margin-left: 2.4vw;
 }
 
 #allVac, #mineVac{
@@ -147,13 +150,14 @@ body{
     border: solid 0.1vw #dcdcdc;
     width: 6vw;
     height: 2.5vw;
-    position: absolute;
+    /*position: absolute;*/
     float: left;
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 1vw;
     padding-top: 0.9vw;
     color: black;
     font-family: HelveticaNeueCyr-Light;
+    line-height: 1.5vw;
 }
 #allVac{
     border-radius: 1.5vw 0 0 1.5vw;
@@ -191,6 +195,7 @@ body{
 
 .logo{
     margin-left: 2vw;
+    display: block;
 }
 .vacancy_reward{
     color:#CC0033;
@@ -217,12 +222,13 @@ body{
     padding-left:16vw;
 }
 .menu{
-    position:absolute;
+    /*position: absolute;*/
     top: 18.5vw;
     color:black;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-family:HelveticaNeueCyr-Medium;
     list-style-type:none;
+    display: block;
 }
 
 .main_menu{
@@ -234,7 +240,12 @@ body{
 .main_menu:hover{
     color:#C14249;
 }
-
+/*
+.icon,
+.label{
+    display: inline-block;
+}
+*/
 #profile .info{
     display: none;
 }
