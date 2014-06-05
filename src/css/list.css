@@ -123,6 +123,7 @@ body{
     clear: both;
     height: 100%; 
 }
+
 .new_vacancy{
     text-align:center; 
     padding: 1vw; 
@@ -194,7 +195,8 @@ body{
 }
 
 .logo{
-    margin-left: 2vw;
+    margin-left: 3vw;
+    margin-top: 1.2vw;
     display: block;
 }
 .vacancy_reward{
