@@ -195,9 +195,10 @@ body{
 }
 
 .logo{
-    margin-left: 3vw;
+    margin-left: 2.1vw;
     margin-top: 1.2vw;
     display: block;
+    margin-bottom: 2.2vw;
 }
 .vacancy_reward{
     color:#CC0033;
@@ -223,31 +224,36 @@ body{
     padding-top: 3vw;
     padding-left:16vw;
 }
+
+li>img{
+    margin-top: 0.8vw;
+}
+
 .menu{
     /*position: absolute;*/
-    top: 18.5vw;
     color:black;
-    font-size: 1.2vw;
-    font-family:HelveticaNeueCyr-Medium;
+    font-size: 1.0vw;
+    /* font-family:HelveticaNeueCyr-Medium; */
+    font-family: Tahoma, Verdana, sans-serif;
     list-style-type:none;
     display: block;
 }
 
 .main_menu{
     color:black;
-    font-family:HelveticaNeueCyr-Medium;
+    font-size: 1.0vw;
+    font-family: Tahoma, Verdana, sans-serif;
     text-decoration: none;
-    padding-left: 0.5vw;
+    list-style-type: none;
+    padding-left: 0.9vw;
+    padding-top: 0.8vw;
 }
+
 .main_menu:hover{
-    color:#C14249;
+    /*color: darkgray;*/
+    opacity: 0.6;
 }
-/*
-.icon,
-.label{
-    display: inline-block;
-}
-*/
+
 #profile .info{
     display: none;
 }
@@ -366,3 +372,5 @@ body{
     border:solid 0.1vw #CC0033;
     color: #CC0033;
 }
+
+/* NEW STYLESHEET */
