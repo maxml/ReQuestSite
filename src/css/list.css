@@ -194,12 +194,6 @@ body{
     margin:0;
 }
 
-.logo{
-    margin-left: 2.1vw;
-    margin-top: 1.2vw;
-    display: block;
-    margin-bottom: 2.2vw;
-}
 .vacancy_reward{
     color:#CC0033;
     font-size:2.5vw;
@@ -225,34 +219,51 @@ body{
     padding-left:16vw;
 }
 
+/*
+/* NEW STYLE...
+*/
+.logo{
+    display: block;
+    margin: 16px 32px 16px 16px;
+}
+
 li>img{
-    margin-top: 0.8vw;
+    margin-top: 10px;
+    margin-left: -25px;
+}
+
+/* pointer cursor */
+.main_menu, 
+.logo{
+    cursor: pointer;
+}
+
+.menu,
+.main_menu{
+    color: black;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 1em;
+    list-style-type: none;
 }
 
 .menu{
-    /*position: absolute;*/
-    color:black;
-    font-size: 1.0vw;
-    /* font-family:HelveticaNeueCyr-Medium; */
-    font-family: Tahoma, Verdana, sans-serif;
-    list-style-type:none;
     display: block;
 }
 
 .main_menu{
-    color:black;
-    font-size: 1.0vw;
-    font-family: Tahoma, Verdana, sans-serif;
     text-decoration: none;
-    list-style-type: none;
-    padding-left: 0.9vw;
-    padding-top: 0.8vw;
+    padding-left: 12px;
 }
 
+
 .main_menu:hover{
-    /*color: darkgray;*/
     opacity: 0.6;
 }
+
+
+
+
+
 
 #profile .info{
     display: none;
