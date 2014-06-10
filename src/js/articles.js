@@ -8,10 +8,11 @@
 Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
 
 var Articles = Parse.Object.extend("Articles");
-var articleField = document.getElementById("main");;
+var articleField = document.getElementById("main");
+;
 
-var name, description, link, creationDate;
-var nameParagraph, descriptionParagraph, linkParagraph, creationParagraph;
+var name, description, link, date;
+var nameParagraph, descriptionParagraph, linkParagraph, dateParagraph;
 
 var query = new Parse.Query(Articles);
 
@@ -27,7 +28,7 @@ query.find({
             nameParagraph = document.createElement("p");
             nameParagraph.className = "article_title";
             nameParagraph.appendChild(document.createTextNode(entry.get("name")));
-            
+
 //            creationDate = entry.createdAt.toString();
 //            creationParagraph = document.createElement("p");
 //            creationParagraph.className = "vacancy_reward";
@@ -38,14 +39,20 @@ query.find({
             descriptionParagraph.className = "article_description";
             descriptionParagraph.appendChild(description);
 
-            link = document.createTextNode(entry.get("link"));
+            link = document.createTextNode(entry.get("author"));
             linkParagraph = document.createElement("p");
             linkParagraph.className = "article_link";
             linkParagraph.appendChild(link);
 
+            date = document.createTextNode(("" + entry.updatedAt).substring(0, 25));
+            dateParagraph = document.createElement("p");
+            dateParagraph.className = "article_date";
+            dateParagraph.appendChild(date);
+
+
             articleDiv.appendChild(nameParagraph);
-        //    articleDiv.appendChild(creationParagraph);
             articleDiv.appendChild(descriptionParagraph);
+            articleDiv.appendChild(dateParagraph);
             articleDiv.appendChild(linkParagraph);
 
             articleField.appendChild(articleDiv);
@@ -69,7 +76,6 @@ function articleClicked(id) {
             // Do something with the returned Parse.Object values
             var object = results[0];
             article = object;
-            console.log(article);
             showDetails();
         },
         error: function(error) {
@@ -80,29 +86,29 @@ function articleClicked(id) {
 
 function showDetails() {
     $('#main').empty();
-    
+
     articleDiv = document.createElement("div");
     articleDiv.className = "article_full";
 
     var articleField = document.getElementById("main");
-    
+
     nameParagraph = document.createElement("p");
     nameParagraph.className = "article_title";
     nameParagraph.appendChild(document.createTextNode(article.get("name")));
-    
+
     text = article.get("text");
     textParagraph = document.createElement("p");
     textParagraph.innerHTML = text;
 
-//    link = document.createTextNode(article.get("link"));
-//    linkParagraph = document.createElement("p");
+    link = document.createTextNode("По материалам " + article.get("link"));
+    linkParagraph = document.createElement("p");
 //    linkParagraph.className = "vacancy_salary";
-//    linkParagraph.appendChild(link);
+    linkParagraph.appendChild(link);
 
     articleDiv.appendChild(nameParagraph);
     articleDiv.appendChild(descriptionParagraph);
- //   articleDiv.appendChild(linkParagraph);
     articleDiv.appendChild(textParagraph);
+    articleDiv.appendChild(linkParagraph);
     articleField.appendChild(articleDiv);
 
 
