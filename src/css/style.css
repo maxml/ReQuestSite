@@ -1,4 +1,4 @@
-/* Font Family */
+/***---------------------- Font Family ----------------------***/
 
 @font-face {
     font-family:'P22UndergroundCYPro-Book';
@@ -227,7 +227,7 @@ ol{
     color: #DC4B4E;
 }
 
-/** SOCIAL ICONS**/
+/*** ---------------------- SOCIAL ICONS ---------------------- ***/
 
 #contact_socials {
     display: inline;
@@ -293,4 +293,23 @@ ol{
     height: 50px;
     transition: 200ms linear background-color, 250ms ease-in background-position;
     width: 50px;
-}  
+}
+
+/***---------------------- LIST ----------------------***/
+
+.article{
+    width: 50vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 2vw;
+    margin: 2vw;
+}
+
+.article_title{
+    color:#000000;
+    size: 5vw;
+    padding-top: 2vw;
+    font-family: HelveticaNeueCyr-Light;
+    padding-left:4vw;
+    margin:0;
+}
