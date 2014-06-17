@@ -22,7 +22,7 @@ function signinCallback(authResult) {
         $('#email').trigger('contentchanged');
         $('#name').trigger('contentchanged');
         $('#pic').trigger('contentchanged');
-        
+
     } else if (authResult[ 'error' ]) {
         console.log('Sign-in state: ' + authResult[ 'error' ]);
     }
@@ -81,9 +81,10 @@ $('#revoke').click(function() {
 
 function userToParse() {
     if (findUser() !== '') {
-        console.log("Authorised!");
+//        console.log("Authorised!");
         return;
     }
+    Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
 
     var User = Parse.Object.extend("User");
     var Wallet = Parse.Object.extend("Wallet");
@@ -102,7 +103,7 @@ function userToParse() {
 
     user.save();
     wallet.save();
-    console.log("SAVE!");
+//    console.log("SAVE!");
 
     findUser();
 }
@@ -114,7 +115,7 @@ $(document).ready(function() {
         // do something after the div content has changed
         setTimeout(function() {
             uname = String($('#name').text()).substring(5);
-            console.log(uname);
+//            console.log(uname);
 
             agregateUserInfo();
         }, 3000);
@@ -124,7 +125,7 @@ $(document).ready(function() {
         // do something after the div content has changed
         setTimeout(function() {
             upic = String($('#user_photo').prop('src'));
-            console.log(upic);
+//            console.log(upic);
 
             agregateUserInfo();
         }, 3000);
@@ -134,7 +135,7 @@ $(document).ready(function() {
         // do something after the div content has changed
         setTimeout(function() {
             uemail = String($('#email').text()).split(' ')[1];
-            console.log(uemail);
+//            console.log(uemail);
 
             agregateUserInfo();
         }, 3000);
@@ -142,7 +143,7 @@ $(document).ready(function() {
 
     function agregateUserInfo() {
         counter++;
-        console.log(counter);
+//        console.log(counter);
 
         if (counter === 3) {
             counter = 0;
