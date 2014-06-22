@@ -7,54 +7,55 @@
 
 Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
 var Articles = Parse.Object.extend("Articles");
-var articleField = document.getElementById("main");
 
 var name, description, link, date;
-var nameParagraph, descriptionParagraph, linkParagraph, dateParagraph;
+var nameParagraph, descriptionParagraph, linkParagraph, dateParagraph, moveParagraph;
 
 var query = new Parse.Query(Articles);
 
 query.find({
     success: function(results) {
         results.forEach(function(entry) {
-            articleDiv = document.createElement("div");
-            articleDiv.className = "article";
-            articleDiv.onclick = function() {
-                window.location.href = "../article/details/?a=" + entry.id;
-                //articleClicked(entry.id);
-            };
+            articleDiv = $("<div></div>", {
+                class: "article",
+                click: function() {
+                    window.location.href = "../article/details/?a=" + entry.id;
+                    //articleClicked(entry.id);
+                }
+            }).appendTo($('#main'));
 
-            nameParagraph = document.createElement("p");
-            nameParagraph.className = "article_title";
-            nameParagraph.appendChild(document.createTextNode(entry.get("name")));
+            nameParagraph = $("<p></p>", {
+                class: "article_title",
+                text: entry.get("name")
+            });
 
-//            creationDate = entry.createdAt.toString();
-//            creationParagraph = document.createElement("p");
-//            creationParagraph.className = "vacancy_reward";
-//            creationParagraph.appendChild(creationDate);
+            moveParagraph = $("<a></a>", {
+                class: "article_move",
+                href: "#",
+                text: ">"
+            });
 
-            description = document.createTextNode(entry.get("description"));
-            descriptionParagraph = document.createElement("p");
-            descriptionParagraph.className = "article_description";
-            descriptionParagraph.appendChild(description);
+            descriptionParagraph = $("<p></p>", {
+                class: "article_description",
+                text: entry.get("description")
+            });
 
-            link = document.createTextNode(entry.get("author"));
-            linkParagraph = document.createElement("p");
-            linkParagraph.className = "article_link";
-            linkParagraph.appendChild(link);
+            linkParagraph = $("<p></p>", {
+                class: "article_link",
+                text: "Автор: " + entry.get("author")
+            });
 
-            date = document.createTextNode(("" + entry.updatedAt).substring(0, 25));
-            dateParagraph = document.createElement("p");
-            dateParagraph.className = "article_date";
-            dateParagraph.appendChild(date);
+            dateParagraph = $("<p></p>", {
+                class: "article_date",
+                text: "Дата последнего изменения: " + ("" + entry.updatedAt).substring(0, 25)
+            });
 
+            articleDiv.append(moveParagraph);
+            articleDiv.append(nameParagraph);
+            articleDiv.append(descriptionParagraph);
+            articleDiv.append(dateParagraph);
+            articleDiv.append(linkParagraph);
 
-            articleDiv.appendChild(nameParagraph);
-            articleDiv.appendChild(descriptionParagraph);
-            articleDiv.appendChild(dateParagraph);
-            articleDiv.appendChild(linkParagraph);
-
-            articleField.appendChild(articleDiv);
         });
     },
     error: function(error) {

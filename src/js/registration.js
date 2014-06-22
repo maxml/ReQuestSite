@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 
+Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
+
+
 function signinCallback(authResult) {
     $('#loader').show();
 
@@ -84,7 +87,6 @@ function userToParse() {
 //        console.log("Authorised!");
         return;
     }
-    Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
 
     var User = Parse.Object.extend("User");
     var Wallet = Parse.Object.extend("Wallet");

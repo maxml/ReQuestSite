@@ -41,30 +41,48 @@ query.find({
 
 function showDetails() {
     $('#main').empty();
-    articleDiv = document.createElement("div");
-    articleDiv.className = "article_full";
-    
-    var articleField = document.getElementById("main");
-    
-    nameParagraph = document.createElement("p");
-    nameParagraph.className = "article_title";
-    nameParagraph.appendChild(document.createTextNode(article.get("name")));
-    
-    text = article.get("text");
-    textParagraph = document.createElement("p");
-    textParagraph.innerHTML = text;
-    
-    link = document.createTextNode("По материалам " + article.get("link"));
-    linkParagraph = document.createElement("p");
-//    linkParagraph.className = "vacancy_salary";
-    linkParagraph.appendChild(link);
-    
-    articleDiv.appendChild(nameParagraph);
-//    articleDiv.appendChild(descriptionParagraph);
-    articleDiv.appendChild(textParagraph);
-    articleDiv.appendChild(linkParagraph);
-    
-    articleField.appendChild(articleDiv);
+
+    articleDiv = $("<div></div>", {
+        class: "article_full"
+    }).appendTo($('#main'));
+
+    nameParagraph = $("<p></p>", {
+        class: "article_title",
+        text: article.get("name")
+    });
+
+    textParagraph = $("<p></p>", {
+        class: "article_full"
+    }).html(article.get("text"));
+
+//    text = article.get("text");
+//    textParagraph = document.createElement("p");
+//    textParagraph.innerHTML = text;
+
+    linkParagraph = $("<p></p>", {
+        class: "article_date",
+        text: "По материалам " + article.get("link")
+    });
+
+    moveParagraphUp = $("<a></a>", {
+        class: "article_back_move",
+        href: "../",
+        text: "<"
+    });
+
+    moveParagraphDown = $("<a></a>", {
+        class: "article_back_move",
+        href: "../",
+        text: "<"
+    });
+
+
+    articleDiv.append(moveParagraphUp);
+    articleDiv.append(nameParagraph);
+    articleDiv.append(textParagraph);
+    articleDiv.append(moveParagraphDown);
+    articleDiv.append(linkParagraph);
+
 }
 
 function getURLParameter(sParam)
