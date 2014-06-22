@@ -4,6 +4,10 @@
  * and open the template in the editor.
  */
 
+
+var name, description, link, date;
+var nameParagraph, descriptionParagraph, linkParagraph, dateParagraph;
+
 var article;
 
 var id = getURLParameter("a");
