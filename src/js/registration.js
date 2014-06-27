@@ -1,13 +1,66 @@
 Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
-var uname, upic, uemail, u, counter = 0;
+var user = {};
+var uname, upic, uemail;
+
+$(document).ready(function() {
+
+    var JSON = JSON || {};
+
+    // implement JSON.stringify serialization
+    JSON.stringify = JSON.stringify || function(obj) {
+        var t = typeof (obj);
+        if (t != "object" || obj === null) {
+            // simple data type
+            if (t == "string")
+                obj = '"' + obj + '"';
+            return String(obj);
+        }
+        else {
+            // recurse array or object
+            var n, v, json = [], arr = (obj && obj.constructor == Array);
+            for (n in obj) {
+                v = obj[n];
+                t = typeof (v);
+                if (t == "string")
+                    v = '"' + v + '"';
+                else if (t == "object" && v !== null)
+                    v = JSON.stringify(v);
+                json.push((arr ? "" : '"' + n + '":') + String(v));
+            }
+            return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
+        }
+    };
+
+    // implement JSON.parse de-serialization
+    JSON.parse = JSON.parse || function(str) {
+        if (str === "")
+            str = '""';
+        eval("var p=" + str + ";");
+        return p;
+    };
+
+    user = JSON.parse(window.localStorage['user']);
+    if (!window.user) {
+        return;
+    }
+    if ((typeof user.name !== 'undefined') || (typeof user.email !== 'undefined') || (typeof user.pic !== 'undefined')) {
+        initialise();
+    }
+});
+
+function initialise() {
+    $('#email').text(user.email);
+    $('#name').text(user.name);
+    $('#pic').html('<img id="user_photo" src="' + user.pic + '" />');
+    $('.info').css("display", "block");
+    $('#signinButton').css('display', 'none');
+}
 
 function logout()
 {
     gapi.auth.signOut();
-
     $('.info').css("display", "none");
     $('#signinButton').show();
-
 //    location.reload();
 }
 function login()
@@ -43,22 +96,13 @@ function loginCallback(result)
                 }
             }
 
-            uname = resp['displayName'];
-//            console.log("Name " + uname);
-
-            upic = resp['image']['url'];
-//            console.log("Pic " + upic);
-
-            uemail = email;
-//            console.log("Email " + uemail);
-
-            $('#email').text(uemail);
-            $('#name').text(uname);
-            $('#pic').html('<img id="user_photo" src="' + upic + '" />');
-
-            $('.info').css("display", "block");
-            $('#signinButton').css('display', 'none');
-
+            user = {
+                name: resp['displayName'],
+                pic: resp['image']['url'],
+                email: email
+            }
+            window.localStorage['user'] = JSON.stringify(user);
+            initialise();
             toParse();
         });
     }
@@ -74,7 +118,6 @@ function onLoadCallback()
 function toParse() {
     var User = Parse.Object.extend("User");
     var Wallet = Parse.Object.extend("Wallet");
-
     // Create a new instance of that class.
     var user = new User();
 //    console.log("userToParse " + uname + uemail + upic);
@@ -82,15 +125,12 @@ function toParse() {
     user.set("username", uname);
     user.set("email", uemail);
     user.set("avatar", upic);
-
     user.set("password", "my-pass");
-
     user.signUp(null, {
         success: function(user) {
 
             var wallet = new Wallet();
             wallet.set("total", 0);
-
             user.set('wallet', wallet);
             user.save();
         },
@@ -99,9 +139,10 @@ function toParse() {
                 success: function(regUser) {
                 },
                 error: function(buff, error) {
-                    console.log("Auto " + error);
+                    console.log("Auto " + error.getMessage());
                 }
             });
         }
     });
 }
+
