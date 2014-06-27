@@ -353,6 +353,7 @@ li>img{
     border: 0;
     margin: 0;
     border-radius: 50%;
+    margin-left: -20px;
 }
 
 #name{
@@ -366,7 +367,7 @@ li>img{
     color: black;
 }
 
-#userDetails{
+.userDetails{
     text-align:center; 
     padding: 1vw; 
     border:solid 0.1vw black; 
@@ -379,7 +380,7 @@ li>img{
     font-size: 1vw;
 }
 
-#userDetails:hover{
+.userDetails:hover{
     border:solid 0.1vw #CC0033;
     color: #CC0033;
 }

@@ -20,20 +20,7 @@
     <link rel="stylesheet" href="../css/list.css">
     <link rel="stylesheet" href="../css/ResponsiveUser.css"/>
 
-    <script type="text/javascript">
-        // Specify the language code prior to loading the JavaScript API
-        window.___gcfg = {
-            lang: 'ru'
-        };
-        (function() {
-            var po = document.createElement('script');
-            po.type = 'text/javascript';
-            po.async = true;
-            po.src = 'https://apis.google.com/js/client:plusone.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(po, s);
-        })();
-    </script>
+
 
     <style>
         /* COPY FROM END OF style.css*/
@@ -55,7 +42,7 @@
             padding-left:4vw;
             margin:0;
         }
-        
+
         .article_move{
             color:#CC0033;
             text-decoration: none;
@@ -97,7 +84,7 @@
 
         </div>
 
-        <div id="loader">
+        <div id="loader" style="display: none">
             <img src="../img/ajax-loader.gif" /> 
             <b>Пожалуйста, подождите. Идет загрузка...</b>
         </div>
@@ -106,14 +93,7 @@
         </div>
 
         <div id="profile">
-            <span id="signinButton"
-                  class="demo g-signin"
-                  data-callback="signinCallback"
-                  data-clientid="45335800229-b4df375ve2l4aofbv82q8nvc7shrbfk9.apps.googleusercontent.com"
-
-                  data-cookiepolicy="single_host_origin"
-                  data-requestvisibleactions="http://schemas.google.com/AddActivity"
-                  data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email">
+            <span id="signinButton" class="demo g-signin" onclick="login();">
                 <span class="icon">&nbsp;</span>
                 <span class="label">Зарегистрироваться!</span>
             </span>
@@ -125,11 +105,14 @@
 
                 <p id="email"></p>
 
-                <button id="userDetails">Мой профиль</button>
+                <button id="revoke" class="userDetails" onclick="logout()">Выйти</button>
 
                 <!--TODO: style for working exit button-->
                 <!--<button class="btn btn-classic" id="revoke">Выйти</button>-->
+                <!--<button class="btn btn-classic" onclick="userToParse();">Test</button>-->
             </div>
+
+
         </div>
     </div>
 
@@ -138,6 +121,21 @@
 
     <script type="text/javascript" src="../js/registration.js"></script>
     <script type="text/javascript" src="../js/articles.js"></script>
+
+    <script type="text/javascript">
+                    // Specify the language code prior to loading the JavaScript API
+                    window.___gcfg = {
+                        lang: 'ru'
+                    };
+                    (function() {
+                        var po = document.createElement('script');
+                        po.type = 'text/javascript';
+                        po.async = true;
+                        po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(po, s);
+                    })();
+    </script>
     <!--<script type="text/javascript" src="../js/article_full.js"></script>
     <script type="text/javascript" src="../js/newvacancy.js"></script>
     <script type="text/javascript" src="../js/switch.js"></script>
