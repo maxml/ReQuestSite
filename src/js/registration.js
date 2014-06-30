@@ -1,6 +1,5 @@
 Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
 var user = {};
-var uname, upic, uemail;
 
 $(document).ready(function() {
 
@@ -59,6 +58,8 @@ function initialise() {
 function logout()
 {
     gapi.auth.signOut();
+    window.localStorage['user'] = null;
+    
     $('.info').css("display", "none");
     $('#signinButton').show();
 //    location.reload();
@@ -102,6 +103,7 @@ function loginCallback(result)
                 email: email
             }
             window.localStorage['user'] = JSON.stringify(user);
+            
             initialise();
             toParse();
         });
@@ -119,27 +121,28 @@ function toParse() {
     var User = Parse.Object.extend("User");
     var Wallet = Parse.Object.extend("Wallet");
     // Create a new instance of that class.
-    var user = new User();
+    var parseUser = new User();
 //    console.log("userToParse " + uname + uemail + upic);
 
-    user.set("username", uname);
-    user.set("email", uemail);
-    user.set("avatar", upic);
-    user.set("password", "my-pass");
-    user.signUp(null, {
-        success: function(user) {
+    parseUser.set("username", user.name);
+    parseUser.set("email", user.email);
+    parseUser.set("avatar", user.pic);
+    parseUser.set("password", "my-pass");
+    
+    parseUser.signUp(null, {
+        success: function(buff) {
 
             var wallet = new Wallet();
             wallet.set("total", 0);
-            user.set('wallet', wallet);
-            user.save();
+            buff.set('wallet', wallet);
+            buff.save();
         },
         error: function(buff, error) {
-            Parse.User.logIn(uname, "my-pass", {
+            Parse.User.logIn(user.name, "my-pass", {
                 success: function(regUser) {
                 },
                 error: function(buff, error) {
-                    console.log("Auto " + error.getMessage());
+                    console.log("Auto " + error);
                 }
             });
         }
