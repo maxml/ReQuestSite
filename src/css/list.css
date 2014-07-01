@@ -121,7 +121,7 @@ body{
 }
 .tr { 
     clear: both;
-    height: 100%; 
+    height: 100%;
 }
 
 .new_vacancy{
@@ -255,19 +255,14 @@ li>img{
     padding-left: 12px;
 }
 
-
 .main_menu:hover{
     opacity: 0.6;
 }
 
-
-
-
-
-
 #profile .info{
     display: none;
 }
+
 .demanded{
     color: #CC0033;
 }
@@ -384,5 +379,3 @@ li>img{
     border:solid 0.1vw #CC0033;
     color: #CC0033;
 }
-
-/* NEW STYLESHEET */
