@@ -98,9 +98,9 @@ function loginCallback(result)
             }
 
             user = {
-                name: email,
+                name: resp['displayName'],
                 pic: resp['image']['url'],
-                email: resp['displayName']
+                email: email
             }
             window.localStorage['user'] = JSON.stringify(user);
             
@@ -124,8 +124,8 @@ function toParse() {
     var parseUser = new User();
 //    console.log("userToParse " + uname + uemail + upic);
 
-    parseUser.set("username", user.name);
-    parseUser.set("email", user.email);
+    parseUser.set("username", user.email); //THIS IS WRIGHT!!!
+    parseUser.set("name", user.name);
     parseUser.set("avatar", user.pic);
     parseUser.set("password", "my-pass");
     
