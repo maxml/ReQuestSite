@@ -426,3 +426,27 @@ li>img{
     float: right;
 }
 
+.article{
+    width: 48vw;
+    height: 15vw;
+    background-color: white;
+    border-radius: 30px;
+    margin: 30px;
+    text-align: justify;
+    padding: 10px 20px 0px 20px;
+}
+
+.article_title_details{
+    color:#CC0033;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2vw;
+    font-family: HelveticaNeueCyr-Light;
+    margin:0;
+}
+
+.article_full_details {
+    text-indent: 20px;
+    padding: 30px;
+}
+

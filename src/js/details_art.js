@@ -47,12 +47,12 @@ function showDetails() {
     }).appendTo($('#main'));
 
     nameParagraph = $("<p></p>", {
-        class: "article_title",
+        class: "article_title_details",
         text: article.get("name")
     });
 
     textParagraph = $("<p></p>", {
-        class: "article_full"
+        class: "article_full_details"
     }).html(article.get("text"));
 
 //    text = article.get("text");
