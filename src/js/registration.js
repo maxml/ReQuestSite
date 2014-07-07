@@ -98,9 +98,9 @@ function loginCallback(result)
             }
 
             user = {
-                name: resp['displayName'],
+                name: email,
                 pic: resp['image']['url'],
-                email: email
+                email: resp['displayName']
             }
             window.localStorage['user'] = JSON.stringify(user);
             
