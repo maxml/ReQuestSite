@@ -294,22 +294,3 @@ ol{
     transition: 200ms linear background-color, 250ms ease-in background-position;
     width: 50px;
 }
-
-/***---------------------- LIST ----------------------***/
-
-/*.article{
-    width: 50vw;
-    height: 15vw;
-    background-color: white;
-    border-radius: 2vw;
-    margin: 2vw;
-}
-
-.article_title{
-    color:#000000;
-    size: 5vw;
-    padding-top: 2vw;
-    font-family: HelveticaNeueCyr-Light;
-    padding-left:4vw;
-    margin:0;
-}*/
