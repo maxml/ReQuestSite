@@ -379,3 +379,50 @@ li>img{
     border:solid 0.1vw #CC0033;
     color: #CC0033;
 }
+
+/* ----------------------- Articles ----------------------- */
+.article{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 22px;
+    margin: 15px;
+    text-align: justify;
+    padding: 5px 10px 0px 10px;
+}
+
+.article_title{
+    color:#CC0033;
+    font-size: 25px;
+    padding-top: 1vw;
+    font-family: HelveticaNeueCyr-Light;
+    padding-left: 2vw;
+    margin:0;
+}
+
+.article_move{
+    color:#CC0033;
+    text-decoration: none;
+    font-size:2.5vw;
+    font-family:HelveticaNeueCyr-Light;
+    float: right;
+    margin: 0;
+}
+
+.article_back_move {
+    color:#CC0033;
+    text-decoration: none;
+    font-size:2.5vw;
+    font-family:HelveticaNeueCyr-Light;
+    float: left;
+    margin: 0;
+}
+
+.article_full {
+    padding: 5px;
+}
+
+.article_date {
+    float: right;
+}
+

@@ -7,293 +7,293 @@ ARTICLE RESPONSIVE STYLE:
 
 @media only screen and ( min-width: 320px ) and ( max-width: 423px ){
 
-body{
-	margin: 0;
-	padding: 0;
-}
+    body{
+        margin: 0;
+        padding: 0;
+    }
 
-/* LOGOTYPE */
-.logo{
-	max-width: 100%;
-}
+    /* LOGOTYPE */
+    .logo{
+        max-width: 100%;
+    }
 
-/* MENU */
-.menu{
-	margin: 0;
-	position: absolute;
-	width: 100%;
-	margin-left: -45px;
-}
+    /* MENU */
+    .menu{
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        margin-left: -45px;
+    }
 
-.menu li{
-	display: inline-block;
-}
+    .menu li{
+        display: inline-block;
+    }
 
-.menu .one{
-	width: 50%;
-	text-align: center;
-}
+    .menu .one{
+        width: 50%;
+        text-align: center;
+    }
 
-.menu .two{
-	float: right;
-	width: 50%;
-	text-align: center;
-}
+    .menu .two{
+        float: right;
+        width: 50%;
+        text-align: center;
+    }
 
-/* GOOGLE+ BUTTON */
-#signinButton .label{
-	display: none;
-}
+    /* GOOGLE+ BUTTON */
+    #signinButton .label{
+        display: none;
+    }
 
-#signinButton.demo{
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 30px;
-}
+    #signinButton.demo{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 30px;
+    }
 
-/* MAIN */
-#main{
-	margin: 0;
-	position: relative;
-	top: 40px;
-	width: 97%;
-}
+    /* MAIN */
+    #main{
+        margin: 0;
+        position: relative;
+        top: 40px;
+        width: 97%;
+    }
 
-/* PROFILE: info and pic, button */
+    /* PROFILE: info and pic, button */
 
-#profile #pic{
-	width: 15vw;
-	height: 15vw;
+    #profile #pic{
+        width: 15vw;
+        height: 15vw;
 
-	top: 14px;
-	right: 140px;
-}
+        top: 14px;
+        right: 140px;
+    }
 
-.info>#name{
-	padding-left: 10px;
-	position: absolute;
-	margin-top: -36px;
-	margin-left: -90px;
-}
+    .info>#name{
+        padding-left: 10px;
+        position: absolute;
+        margin-top: -36px;
+        margin-left: -90px;
+    }
 
-.info>#email{
-	font-size: .7em;
-	margin-left: -90px;
-}
+    .info>#email{
+        font-size: .7em;
+        margin-left: -90px;
+    }
 
-.userDetails{
-	font-size: .8em;
-	width: 20vw;
+    .userDetails{
+        font-size: .8em;
+        width: 20vw;
 
-	top: 2px;
-	right: 20px;
-}
+        top: 2px;
+        right: 20px;
+    }
 
 }
 
 /* LANDSCAPE */
 @media only screen and (max-width: 480px){
 
-body{
-	margin: 0;
-	padding: 0;
-}
+    body{
+        margin: 0;
+        padding: 0;
+    }
 
-/* LOGOTYPE */
-.logo{
-	max-width: 100%;
-}
+    /* LOGOTYPE */
+    .logo{
+        max-width: 100%;
+    }
 
-/* MENU */
-.menu{
-	margin: 0;
-	position: absolute;
-	width: 100%;
-	margin-left: -45px;
-}
+    /* MENU */
+    .menu{
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        margin-left: -45px;
+    }
 
-.menu li{
-	display: inline-block;
-}
+    .menu li{
+        display: inline-block;
+    }
 
-.menu .one{
-	width: 50%;
-	text-align: center;
-}
+    .menu .one{
+        width: 50%;
+        text-align: center;
+    }
 
-.menu .two{
-	float: right;
-	width: 50%;
-	text-align: center;
-}
+    .menu .two{
+        float: right;
+        width: 50%;
+        text-align: center;
+    }
 
-/* GOOGLE+ BUTTON */
-#signinButton .label{
-	/*display: none;*/
-}
+    /* GOOGLE+ BUTTON */
+    #signinButton .label{
+        /*display: none;*/
+    }
 
-#signinButton.demo{
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 30px;
-}
+    #signinButton.demo{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 30px;
+    }
 
-/* MAIN */
-#main{
-	margin: 0;
-	position: relative;
-	top: 40px;
-	width: 97%;
-}
+    /* MAIN */
+    #main{
+        margin: 0;
+        position: relative;
+        top: 40px;
+        width: 97%;
+    }
 
-/* PROFILE: info and pic, button */
+    /* PROFILE: info and pic, button */
 
-#profile #pic{
-	width: 15vw;
-	height: 15vw;
+    #profile #pic{
+        width: 15vw;
+        height: 15vw;
 
-	top: 14px;
-	right: 132px;
-}
+        top: 14px;
+        right: 132px;
+    }
 
-#profile .info>#name{
-	padding-left: 10px;
-	position: absolute;
-	margin-top: -36px;
-	margin-left: -70px;
-}
+    #profile .info>#name{
+        padding-left: 10px;
+        position: absolute;
+        margin-top: -36px;
+        margin-left: -70px;
+    }
 
-.info>#email{
-	font-size: .8em;
-	margin-left: -90px;
-}
+    .info>#email{
+        font-size: .8em;
+        margin-left: -90px;
+    }
 
-.userDetails{
-	font-size: .8em;
-	width: 20vw;
+    .userDetails{
+        font-size: .8em;
+        width: 20vw;
 
-	top: 2px;
-	right: 20px;
-}
+        top: 2px;
+        right: 20px;
+    }
 
 }
 
 @media only screen and (min-width: 540px) and (max-width: 720px){
 
-body{
-	padding: 0;
-/*	margin: 5px;*/
-}
+    body{
+        padding: 0;
+        /*	margin: 5px;*/
+    }
 
-/* LOGOTYPE */
-#col1 .logo{
-	width: 86%;
-	margin: 2px 10px 1px 2px;
-}
+    /* LOGOTYPE */
+    #col1 .logo{
+        width: 86%;
+        margin: 2px 10px 1px 2px;
+    }
 
-/* MENU */
-.menu{
-	margin-left: -14px;
-	position: absolute;
-/*	width: 40%;*/
-	font-size: 0.9em;
-}
+    /* MENU */
+    .menu{
+        margin-left: -14px;
+        position: absolute;
+        /*	width: 40%;*/
+        font-size: 0.9em;
+    }
 
-/* GOOGLE+ BUTTON */
-#signinButton .label{
-	display: none;
-}
+    /* GOOGLE+ BUTTON */
+    #signinButton .label{
+        display: none;
+    }
 
-#signinButton.demo{
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 30px;
-}
+    #signinButton.demo{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 30px;
+    }
 
-/* PROFILE: info and pic, button */
-#profile .info{
-	margin-left: -10px;
-}
+    /* PROFILE: info and pic, button */
+    #profile .info{
+        margin-left: -10px;
+    }
 
-#profile #pic{
-	width: 15vw;
-	height: 15vw;
+    #profile #pic{
+        width: 15vw;
+        height: 15vw;
 
-	right: -20px;
-}
+        right: -20px;
+    }
 
-.info>#email{
-	font-size: .6em;
-}
+    .info>#email{
+        font-size: .6em;
+    }
 
-.userDetails{
-	font-size: .8em;
-	width: 20vw;
+    .userDetails{
+        font-size: .8em;
+        width: 20vw;
 
-	top: 2px;
-}
+        top: 2px;
+    }
 
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1183px){
 
-/* GOOGLE+ BUTTON */
-#signinButton .label{
-	display: none;
-}
+    /* GOOGLE+ BUTTON */
+    #signinButton .label{
+        display: none;
+    }
 
-#signinButton.demo{
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 30px;
-}
+    #signinButton.demo{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 30px;
+    }
 
-/* PROFILE: info and pic, button */
-#profile .info{
-	margin-left: -10px;
-}
+    /* PROFILE: info and pic, button */
+    #profile .info{
+        margin-left: -10px;
+    }
 
-#profile #pic{
-	width: 10vw;
-	height: 10vw;
+    #profile #pic{
+        width: 10vw;
+        height: 10vw;
 
-	right: -20px;
-}
+        right: -20px;
+    }
 
-.info>#email{
-	font-size: .6em;
-}
+    .info>#email{
+        font-size: .6em;
+    }
 
-.userDetails{
-	font-size: .8em;
-	width: 10vw;
+    .userDetails{
+        font-size: .8em;
+        width: 10vw;
 
-	top: 2px;
-}
+        top: 2px;
+    }
 
 }
 
 @media only screen and (min-width: 1183px) and (max-width: 2000px){
 
-/* GOOGLE+ BUTTON */
-#signinButton .label{
-	/*display: none;*/
-}
+    /* GOOGLE+ BUTTON */
+    #signinButton .label{
+        /*display: none;*/
+    }
 
-#signinButton.demo{
-	margin: 0;
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: 30px;
-}
+    #signinButton.demo{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 30px;
+    }
 
 }
