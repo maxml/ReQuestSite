@@ -1,0 +1,24 @@
+#header {
+	background-color: #BBB;
+}
+
+#left-pane {
+	background-color: #CCC;
+	width: 200px;
+	float: left;
+}
+
+#content {
+	float: left;
+}
+
+#right-pane {
+	background-color: #DDD;
+	width: 200px;
+	float: right;
+}
+
+#footer {
+	background-color: #EEE;
+	clear: both;
+}
