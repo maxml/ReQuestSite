@@ -22,7 +22,7 @@ app.config(['$routeProvider',
 	console.log($rootScope);
 	// Load user from session if exists
 	var currentParseUser = User.current();
-	if (currentParseUser !== undefined) {
+	if (currentParseUser) {
 		var user = {};
 		user.email = currentParseUser.get("username");
 		user.name = currentParseUser.get("name");
