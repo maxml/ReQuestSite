@@ -1,16 +1,16 @@
-var app = angular.module('requestApp', ['ngRoute']);
+var app = angular.module('requestApp', ['ngRoute', 'appControllers']);
 
 app.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
-			when('/login', {
+			when('login', {
 				templateUrl: 'partials/login.html'
 			}).
-			when('/register', {
+			when('register', {
 				templateUrl: 'partials/register.html'
 			}).
 			otherwise({
-				redirectTo: '/login'
+				redirectTo: 'login'
 			});
 	}
 ]);

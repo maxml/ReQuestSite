@@ -1,1 +1,14 @@
-{{'right' + '-' + 'pane'}}
+<div ng-controller="LoginController">
+	<button ng-click="login()" ng-if="!user.email">
+		Login
+	</button>
+
+	{{user.email}}
+	<div ng-if="user.pic">
+		<img src="{{user.pic}}" />
+	</div>
+
+	<button ng-click="logout()" ng-if="user.email">
+		Logout
+	</button>
+</div>
