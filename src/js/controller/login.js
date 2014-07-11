@@ -27,7 +27,9 @@ appControllers.controller('LoginController', ['$scope', '$rootScope', '$q', func
 				}
 			});
 			parseUser.logIn().then(function(){
-				$rootScope.user = user;
+				$rootScope.$apply(function() {
+					$rootScope.user = user;
+				})
 			});
 		});
 	};

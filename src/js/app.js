@@ -3,14 +3,14 @@ var app = angular.module('requestApp', ['ngRoute', 'appControllers']);
 app.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
-			when('login', {
-				templateUrl: 'partials/login.html'
+			when('home', {
+				templateUrl: 'partials/home.html'
 			}).
-			when('register', {
-				templateUrl: 'partials/register.html'
+			when('requests', {
+				templateUrl: 'partials/requests.html'
 			}).
 			otherwise({
-				redirectTo: 'login'
+				redirectTo: 'home'
 			});
 	}
 ]).run(function($rootScope) {
@@ -19,7 +19,6 @@ app.config(['$routeProvider',
 	User = Parse.Object.extend("User");
 	Wallet = Parse.Object.extend("Wallet");
 
-	console.log($rootScope);
 	// Load user from session if exists
 	var currentParseUser = User.current();
 	if (currentParseUser) {
@@ -33,4 +32,3 @@ app.config(['$routeProvider',
 		});
 	}
 });
-
