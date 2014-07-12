@@ -3,10 +3,10 @@ var app = angular.module('requestApp', ['ngRoute', 'appControllers']);
 app.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
-			when('home', {
+			when('/home', {
 				templateUrl: 'partials/home.html'
 			}).
-			when('requests', {
+			when('/requests', {
 				templateUrl: 'partials/requests.html'
 			}).
 			otherwise({
