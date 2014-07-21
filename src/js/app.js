@@ -4,10 +4,12 @@ app.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 			when('/home', {
-				templateUrl: 'partials/home.html'
+				templateUrl: 'partials/home.html',
+				controller: 'LoginController'
 			}).
 			when('/requests', {
-				templateUrl: 'partials/requests.html'
+				templateUrl: 'partials/requests.html',
+				controller: 'RequestsController'
 			}).
 			otherwise({
 				redirectTo: 'home'
@@ -18,6 +20,7 @@ app.config(['$routeProvider',
 
 	User = Parse.Object.extend("User");
 	Wallet = Parse.Object.extend("Wallet");
+	Request = Parse.Object.extend("Requests");
 
 	// Load user from session if exists
 	var currentParseUser = User.current();

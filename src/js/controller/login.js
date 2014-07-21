@@ -1,5 +1,3 @@
-var appControllers = angular.module('appControllers', []);
-
 appControllers.controller('LoginController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
 	$scope.login = function() {
 		gapi.auth.signIn({
