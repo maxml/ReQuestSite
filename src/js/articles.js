@@ -47,7 +47,7 @@ query.find({
 
             dateParagraph = $("<p></p>", {
                 class: "article_date",
-                text: "Дата последнего изменения: " + ("" + entry.updatedAt).substring(0, 25)
+                text: "Дата последнего изменения: " + ("" + entry.createdAt).substring(0, 25)
             });
 
             articleDiv.append(moveParagraph);
