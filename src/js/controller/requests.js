@@ -24,6 +24,7 @@ appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', f
 		result.city = parseRequest.get("city");
 		result.company = parseRequest.get("company");
 		result.title = parseRequest.get("title");
+		result.reward = parseRequest.get("reward");
 		return result;
 	};
 }]);
