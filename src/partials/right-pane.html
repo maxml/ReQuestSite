@@ -1,14 +1,37 @@
 <div ng-controller="LoginController">
-	<button ng-click="login()" ng-if="!user.email">
-		Login
-	</button>
 
-	{{user.email}}
-	<div ng-if="user.pic">
-		<img src="{{user.pic}}" />
-	</div>
+    <span class="signin_demo g-signin" ng-click="login()" ng-if="!user.email">
+        <span class="icon">&nbsp;</span>
+        <span class="label">Зарегистрироваться!</span>
+    </span>
 
-	<button ng-click="logout()" ng-if="user.email">
-		Logout
-	</button>
+    <div class="info">
+        <div class="pic" ng-if="user.pic">
+            <img src="{{user.pic}}" />
+        </div>
+
+        <p class="name">{{user.name}}</p>
+
+        <p class="email">{{user.email}}</p>
+
+        <button class="logout" ng-click="logout()" ng-if="user.email">Выйти</button>
+
+        <!--TODO: style for working exit button-->
+        <!--<button class="btn btn-classic" id="revoke">Выйти</button>-->
+        <!--<button class="btn btn-classic" onclick="userToParse();">Test</button>-->
+    </div>
+
 </div>
+
+<!-- <button ng-click="login()" ng-if="!user.email">
+        Login
+    </button>
+
+    {{user.email}}
+    <div ng-if="user.pic">
+        <img src="{{user.pic}}" />
+    </div>
+
+    <button ng-click="logout()" ng-if="user.email">
+        Logout
+    </button>-->

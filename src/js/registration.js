@@ -59,7 +59,7 @@ function logout()
 {
     gapi.auth.signOut();
     window.localStorage['user'] = null;
-    
+
     $('.info').css("display", "none");
     $('#signinButton').show();
 //    location.reload();
@@ -103,7 +103,7 @@ function loginCallback(result)
                 email: email
             }
             window.localStorage['user'] = JSON.stringify(user);
-            
+
             initialise();
             toParse();
         });
@@ -128,7 +128,7 @@ function toParse() {
     parseUser.set("name", user.name);
     parseUser.set("avatar", user.pic);
     parseUser.set("password", "my-pass");
-    
+
     parseUser.signUp(null, {
         success: function(buff) {
 
