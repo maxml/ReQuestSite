@@ -12,6 +12,8 @@ var name, description, link, date;
 var nameParagraph, descriptionParagraph, linkParagraph, dateParagraph, moveParagraph;
 
 var query = new Parse.Query(Articles);
+query.limit(10);
+query.descending("createdAt");
 
 query.find({
     success: function(results) {
