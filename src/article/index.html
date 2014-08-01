@@ -21,8 +21,92 @@
 
     <link rel="stylesheet" href="../css/article_res.css" type="text/css"/>
 
+    <!-- MENU -->
+    <link rel="stylesheet" type="text/css" href="../css/menu.css">
+
 </head>
 <body>
+
+    <!-- MENU -->
+    <nav id="menu" style="display: none;">
+
+        <!-- tabs -->
+        <div id="con_tabs">
+            <ul class="tabs">
+                <!-- first tab -->
+                <li>
+                    <!-- HIDE BLOCK-->
+                    <a onClick="hide();return false;" id="link1">
+                        <img src="../img/menu/hide.png" alt="">
+                    </a>
+                </li>
+
+                <!-- second tab -->
+                <li class="profile">
+                    <a href="#one">
+                        <img src="../img/menu/profile.png" alt="">
+                        <span>Profile</span>
+                    </a>
+                </li>   
+
+                <!-- third -->
+                <li class="setting">
+                    <a href="#two">
+                        <img src="../img/menu/setting.png" alt="">
+                        <span>Setting</span>
+                    </a>
+                </li>   
+
+                <!-- fourth -->
+                <li class="loading">
+                    <a href="#three">
+                        <img src="../img/menu/star.png" alt="">
+                        <span>Loading</span>
+                    </a>
+                </li>
+
+                <!-- fifth -->
+                <li class="other">
+                    <a href="#four">
+                        <img src="../img/menu/other.png" alt="">
+                        <span>Other</span>
+                    </a>
+                </li>   
+                <!-- ... -->
+            </ul>
+        </div>
+
+        <!-- content -->
+        <div id="tabs_content">
+            <ul>
+                <li id="one">
+                    <span>
+                        PROFILE
+                    </span>     
+                </li>
+
+                <li id="two">
+                    <span>
+                        SETTING
+                    </span>
+                </li>
+
+                <li id="three">
+                    <span>
+                        LOADING
+                    </span>
+                </li>
+
+                <li id="four">
+                    <span>
+                        OTHER
+                    </span>
+                </li>
+                <!-- ... -->
+            </ul>
+        </div>
+        
+    </nav>
 
     <div class="tr wrapper">
         <div id="col1">
@@ -42,6 +126,14 @@
                                     <img src="../img/menu/navico.gif" alt="A">
                                     <a class="main_menu" href="../user/">Вакансии</a>
                                 </li>-->
+
+                <li>
+                    <!-- SHOW BLOCK -->
+                    <a onClick="show();return false;" id="link2">
+                        <!-- <span>Show</span> -->
+                        <img src="../img/menu/show.png" alt="">
+                    </a>
+                </li>
             </ul>
 
 
@@ -94,6 +186,9 @@
 
     <script type="text/javascript" src="../js/registration.js"></script>
     <script type="text/javascript" src="../js/articles.js"></script>
+
+    <!-- MENU -->
+    <script type="text/javascript" src="../js/menu.js"></script>
 
     <script type="text/javascript">
                     // Specify the language code prior to loading the JavaScript API
