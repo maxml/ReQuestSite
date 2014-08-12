@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="../css/list.css" type="text/css">
 
     <link rel="stylesheet" href="../css/article_res.css" type="text/css"/>
-
-    <!-- MENU -->
     <link rel="stylesheet" type="text/css" href="../css/menu.css">
 
 </head>
@@ -34,9 +32,8 @@
         <div id="con_tabs">
             <ul class="tabs">
                 <!-- first tab -->
-                <li>
-                    <!-- HIDE BLOCK-->
-                    <a onClick="hide();return false;" id="link1">
+                <li onClick="hide()" >
+                    <a id="link1">
                         <img src="../img/menu/hide.png" alt="">
                     </a>
                 </li>
@@ -105,11 +102,15 @@
                 <!-- ... -->
             </ul>
         </div>
-        
-    </nav>
+    </nav><!-- END MENU -->
 
     <div class="tr wrapper">
         <div id="col1">
+            <div>
+                <a id="link2" onClick="show();" >
+                    <img src="../img/menu/show.png" alt="">
+                </a>
+            </div>
             <div class="logo">
                 <img class="logo_image" onclick="window.setTimeout('location.reload()', 10);" src="../img/icon.jpg"  alt="ReQuest">
             </div>
@@ -126,14 +127,6 @@
                                     <img src="../img/menu/navico.gif" alt="A">
                                     <a class="main_menu" href="../user/">Вакансии</a>
                                 </li>-->
-
-                <li>
-                    <!-- SHOW BLOCK -->
-                    <a onClick="show();return false;" id="link2">
-                        <!-- <span>Show</span> -->
-                        <img src="../img/menu/show.png" alt="">
-                    </a>
-                </li>
             </ul>
 
 
@@ -187,7 +180,6 @@
     <script type="text/javascript" src="../js/registration.js"></script>
     <script type="text/javascript" src="../js/articles.js"></script>
 
-    <!-- MENU -->
     <script type="text/javascript" src="../js/menu.js"></script>
 
     <script type="text/javascript">
