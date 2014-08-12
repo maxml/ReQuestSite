@@ -416,6 +416,10 @@ li>img{
     margin: 0;
 }
 
+.article_link {
+    margin-left: 30px;
+}
+
 .article_back_move {
     color:#CC0033;
     text-decoration: none;
@@ -434,13 +438,13 @@ li>img{
 }
 
 .article{
-    width: 48vw;
-    height: 15vw;
+    width: auto;
+    height: auto;
     background-color: white;
     border-radius: 30px;
     margin: 30px;
     text-align: justify;
-    padding: 10px 20px 0px 20px;
+    padding: 5px 10px 15px 10px;
 }
 
 .article_title_details{
