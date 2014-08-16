@@ -36,7 +36,7 @@ ARTICLE RESPONSIVE STYLE:
     }
 
     .menu .two{
-        float: right;
+        /* float: right; */
         width: 50%;
         text-align: center;
     }
@@ -122,13 +122,13 @@ ARTICLE RESPONSIVE STYLE:
     }
 
     .menu .one{
-        width: 50%;
+        width: 33%;
         text-align: center;
     }
 
     .menu .two{
-        float: right;
-        width: 50%;
+        /* float: right; */
+        width: 33%;
         text-align: center;
     }
 
