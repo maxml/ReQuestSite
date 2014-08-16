@@ -59,15 +59,15 @@
     /* PROFILE: info and pic, button */
 
     #profile #pic{
-        width: 15vw;
-        height: 15vw;
+        width: 15%;
+        height: 15%;
 
         top: 14px;
         right: 140px;
     }
     
     .info {
-        left: 78vw;
+        left: 78%;
     }
 
     .info>#name{
@@ -84,10 +84,14 @@
 
     .userDetails{
         font-size: .8em;
-        width: 20vw;
+        width: 20%;
 
         top: 2px;
         right: 20px;
+    }
+    
+    .ceo {
+        font-size: 10px;
     }
 
 }
@@ -156,8 +160,8 @@
     /* PROFILE: info and pic, button */
 
     #profile #pic{
-        width: 15vw;
-        height: 15vw;
+        width: 15%;
+        height: 15%;
 
         top: 14px;
         right: 150px;
@@ -171,7 +175,7 @@
     }
     
     .info {
-        left: 75vw;
+        left: 75%;
     }
 
     .info>#email{
@@ -183,7 +187,7 @@
 
     .userDetails{
         font-size: .8em;
-        width: 20vw;
+        width: 20%;
 
         top: -10px;
         right: 20px;
@@ -207,7 +211,7 @@
 
     /* MENU */
     .menu{
-        margin-left: -50px;
+        margin-left: -65px;
         position: absolute;
         /*	width: 40%;*/
         font-size: 0.9em;
@@ -230,18 +234,18 @@
     #profile .info{
         margin-left: -6px;
     
-        left: 77vw;
+        left: 77%;
 }
 
     #profile #pic{
-        width: 15vw;
-        height: 15vw;
+        width: 15%;
+        height: 15%;
 
         right: -20px;
     }
 
     .info {
-        left: 77vw;
+        left: 77%;
     }
     
     .info>#email{
@@ -250,11 +254,14 @@
 
     .userDetails{
         font-size: .8em;
-        width: 20vw;
+        width: 20%;
 
         top: 2px;
     }
 
+    .ceo {
+        font-size: 15px;
+    }
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1183px){
@@ -294,14 +301,14 @@
     }
 
     #profile #pic{
-        width: 10vw;
-        height: 10vw;
+        width: 10%;
+        height: 10%;
 
         right: -20px;
     }
 
     .info {
-        left: 80vw;
+        left: 80%;
     }
     
     .info>#email{
@@ -310,11 +317,14 @@
 
     .userDetails{
         font-size: .8em;
-        width: 10vw;
+        width: 10%;
 
         top: 2px;
     }
 
+    .ceo {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 1183px) and (max-width: 2000px){
@@ -333,6 +343,10 @@
     }
 
     .info {
-        left: 80vw;
+        left: 80%;
+    }
+    
+    .ceo {
+        font-size: 25px;
     }
 }
