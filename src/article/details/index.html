@@ -17,9 +17,8 @@
 
     <meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="stylesheet" href="../../css/list.css">
-    <!--    <link rel="stylesheet" href="../../css/ResponsiveUser.css"/>-->
 
+    <link rel="stylesheet" href="../../css/list.css">
     <link rel="stylesheet" href="../../css/article_res.css"/>
 
 </head>
@@ -78,33 +77,93 @@
         </div>
     </div>
     <footer>
-        <ul id="contact_socials">
-            <li><a class="facebook" href="https://www.facebook.com/request.project" target="_blank"></a></li>
-            <li><a class="googleplus" href="https://plus.google.com/u/0/communities/107860058492106963570" target="_blank"></a></li>
-            <li><a class="vimeo" href="http://vk.com/request_project" target="_blank"></a></li>
-        </ul>
-        <div class="ceo">Вопросы и предложения: <a href="mailto:ceo.request@gmail.com">ceo.request@gmail.com</a></div>
+        <div style="width: 400px; margin: 0 auto; padding-left: 10px">
+            <!--<span class="ceo" >Поделиться: </span>-->
+            <ul id="contact_socials">
+                <li class="footer_text_details">Поделиться: </li>
+                <li><a class="share facebook" href="#"></a></li>
+                <li><a class="share google" href="#"></a></li>
+                <li><a class="share vimeo" href="#"></a></li>
+            </ul>
+        </div>
+
     </footer>
 
+    <script>
+
+        /**
+         * 
+         * Script for Share Button 
+         */
+        var element = document.getElementsByClassName('share', 'facebook');
+        element[0].href = 'https://www.facebook.com/sharer/sharer.php?u=' + window.location.href;
+        element = document.getElementsByClassName('share', 'google');
+        element[1].href = 'https://plus.google.com/share?url=' + window.location.href;
+        element = document.getElementsByClassName('share', 'vimeo');
+        element[2].href = 'http://vkontakte.ru/share.php?url=' + window.location.href;
+
+
+        var Config = {
+            Link: "a.share",
+            Width: 500,
+            Height: 500
+        };
+
+        // add handler links
+        var slink = document.querySelectorAll(Config.Link);
+        for (var a = 0; a < slink.length; a++) {
+            slink[a].onclick = PopupHandler;
+        }
+
+        // create popup
+        function PopupHandler(e) {
+
+            e = (e ? e : window.event);
+            var t = (e.target ? e.target : e.srcElement);
+
+            // popup position
+            var
+                    px = Math.floor(((screen.availWidth || 1024) - Config.Width) / 2),
+                    py = Math.floor(((screen.availHeight || 700) - Config.Height) / 2);
+
+            // open popup
+            var popup = window.open(t.href, "social",
+                    "width=" + Config.Width + ",height=" + Config.Height +
+                    ",left=" + px + ",top=" + py +
+                    ",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1");
+            if (popup) {
+                popup.focus();
+                if (e.preventDefault)
+                    e.preventDefault();
+                e.returnValue = false;
+            }
+
+            return !!popup;
+        }
+
+
+    </script>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
 
     <script type="text/javascript" src="../../js/registration.js"></script>
     <script type="text/javascript" src="../../js/details_art.js"></script>
+
+
     <script type="text/javascript">
-                    // Specify the language code prior to loading the JavaScript API
-                    window.___gcfg = {
-                        lang: 'ru'
-                    };
-                    (function() {
-                        var po = document.createElement('script');
-                        po.type = 'text/javascript';
-                        po.async = true;
-                        po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(po, s);
-                    })();
+        // Specify the language code prior to loading the JavaScript API
+        window.___gcfg = {
+            lang: 'ru'
+        };
+        (function() {
+            var po = document.createElement('script');
+            po.type = 'text/javascript';
+            po.async = true;
+            po.src = 'https://apis.google.com/js/client.js?onload=onLoadCallback';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(po, s);
+        })();
     </script>
     <script>
         (function(i, s, o, g, r, a, m) {

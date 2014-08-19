@@ -89,7 +89,7 @@
 }
 
 body{
-    background-color:#F0EFF4;
+    background-color:F0EFF4;
 }
 #col1,#profile {
     background-color:white;
@@ -421,6 +421,10 @@ li>img{
     margin-left: 30px;
 }
 
+.article_share {
+    float: right;
+}
+
 .article_back_move {
     color:#CC0033;
     text-decoration: none;
@@ -480,10 +484,9 @@ footer {
     background: #DADADA;
 }
 
-.ceo{
+.footer_text, .footer_text_details {
     font-family:HelveticaNeueCyr-Light; 
-    /* font-size: 25px; */ 
-    margin-right: 30px;
+    /* margin-right: 30px; */
     text-align: center;
     color: #DC4B4E;
 }
@@ -493,23 +496,19 @@ footer {
 
 #contact_socials {
     display: inline;
-    margin-right: auto;
-    margin-top: 56px;
     list-style: none;
 } 
 
 #contact_socials li {
     float: left;
-    margin: 0 10px;
-    //margin-right: 10px;
-
+    /* margin: 0 10px; */
 } 
 
-#contact_socials li a.googleplus {    background-position: -120px 0px } 
+#contact_socials li a.google {    background-position: -120px 0px } 
 
-#contact_socials li a.googleplus:active {    background-color: #333333 } 
+#contact_socials li a.google:active {    background-color: #333333 } 
 
-#contact_socials li a.googleplus:hover {
+#contact_socials li a.google:hover {
     background-color: #DC5442;
     background-position: -120px -60px;
 } 
@@ -542,6 +541,12 @@ footer {
 } 
 
 #contact_socials li a {
+    width: 50px;
+    height: 50px;
+    display: list-item;
+}
+
+#contact_socials li a.share {
     -moz-border-radius: 8px;
     -moz-transition: 200ms linear background-color, 250ms ease-in background-position;
     -ms-transition: 200ms linear background-color, 250ms ease-in background-position;
@@ -553,7 +558,13 @@ footer {
     background-repeat: no-repeat;
     border-radius: 8px;
     display: list-item;
-    height: 50px;
     transition: 200ms linear background-color, 250ms ease-in background-position;
-    width: 50px;
 }
+
+/***************************** similar list ****************************/
+
+.similar_menu {text-align:justify; text-align-last:justify; list-style-type:none; padding:0;margin:0;}
+.similar_menu li {display:inline-block; padding:5px 10px; cursor:pointer;}
+.similar_menu li a {text-decoration: none}
+.similar_menu li:hover {background:#FFFFFF;}
+.similar_menu:after {content:""; display:inline-block; width:100%; height:0; overflow:hidden;}

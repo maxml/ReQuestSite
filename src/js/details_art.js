@@ -6,7 +6,7 @@
 
 
 var name, description, link, date;
-var nameParagraph, descriptionParagraph, linkParagraph, dateParagraph;
+var textParagraph, nameParagraph, descriptionParagraph, linkParagraph, dateParagraph;
 
 var article;
 
@@ -54,10 +54,6 @@ function showDetails() {
     textParagraph = $("<p></p>", {
         class: "article_full_details"
     }).html(article.get("text"));
-
-//    text = article.get("text");
-//    textParagraph = document.createElement("p");
-//    textParagraph.innerHTML = text;
 
     linkParagraph = $("<p></p>", {
         class: "article_date",
