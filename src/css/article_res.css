@@ -1,5 +1,4 @@
 @media only screen and ( min-width: 200px ) and ( max-width: 540px ){
-
     body{
         margin: 0;
         padding: 0;
@@ -9,6 +8,8 @@
     #col1 .logo img{
         max-width: 70px;
         height: 100%;
+        margin-left: -10px;
+        margin-top: -10px;
     }
 
     /* MENU */
@@ -56,6 +57,10 @@
         width: 97%;
     }
 
+    #main .article>.article_move{
+        display: none;
+    }
+
     /* PROFILE: info and pic, button */
 
     #profile #pic{
@@ -70,11 +75,11 @@
         left: 78%;
     }
 
-    .info>#name{
+    #profile .info>#name{
         padding-left: 10px;
-        position: absolute;
+/*        position: absolute;*/
         margin-top: -36px;
-        margin-left: -90px;
+        margin-left: -80px;
     }
 
     .info>#email{
@@ -163,6 +168,10 @@
         height: auto;
     }
 
+    #main .article>.article_move{
+        display: none;
+    }
+
     /* PROFILE: info and pic, button */
 
     #profile #pic{
@@ -175,7 +184,7 @@
 
     #profile .info>#name{
         padding-left: 10px;
-        position: absolute;
+       /* position: absolute;*/
         margin-top: -36px;
         margin-left: -70px;
     }
@@ -187,7 +196,6 @@
     .info>#email{
         font-size: .8em;
         margin-left: -100px;
-
         margin-top: -10px;
     }
 
@@ -307,15 +315,19 @@
     }
 
     /* PROFILE: info and pic, button */
+    #profile{
+        text-align: center;
+    }
+
     #profile .info{
-        margin-left: -10px;
+        margin-left: -24px;
     }
 
     #profile #pic{
         width: 10%;
         height: 10%;
 
-        right: -20px;
+        right: -34px;
     }
 
     .info {
@@ -323,7 +335,7 @@
     }
 
     .info>#email{
-        /* font-size: .6em; */
+         font-size: .9em; 
     }
 
     .userDetails{
@@ -372,4 +384,7 @@
     
         padding-top: 8px;
 }
+    #profile #pic{
+        right: -16px;
+    }
 }
