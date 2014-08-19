@@ -268,6 +268,7 @@ li>img{
 
 #profile .info{
     display: none;
+    margin: 0 auto;
 }
 
 .demanded{
@@ -335,7 +336,7 @@ li>img{
 }
 
 .info{
-    top: 3%;
+    top: 5%;
     /* left: 78%; */
     position: absolute;
     text-align: center;
@@ -343,10 +344,10 @@ li>img{
 
 #pic{
     position: relative;
-    margin-left: 3%; 
+    margin-left: 52px; 
     background: #fff;
-    width: 8%; /* ?????? */
-    height: 8%; /* ?????? */
+    width: 80px; /* ?????? */
+    height: 80px; /* ?????? */
     border-radius: 50%;
 }
 #pic img{
@@ -371,15 +372,15 @@ li>img{
 
 .userDetails{
     text-align:center; 
-    padding: 1%; 
+    padding: 10px; 
     border:solid 0.1% black; 
-    border-radius: 1.5%; 
+    border-radius: 15px; 
     color:black; 
     background:white;
     position:relative;
-    width: 10%;
+    width: 110px;
     font-family: HelveticaNeueCyr-Light;
-    font-size: 1%;
+    font-size: 15px;
 }
 
 .userDetails:hover{
@@ -501,8 +502,11 @@ footer {
 
 #contact_socials li {
     float: left;
-    /* margin: 0 10px; */
 } 
+
+#contact_socials li .share{
+    margin-left: 5px;
+}
 
 #contact_socials li a.google {    background-position: -120px 0px } 
 
