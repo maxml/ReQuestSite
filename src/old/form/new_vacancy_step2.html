@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/list.css">
+    </head>
+    <body>
+        <div id="vacancy_form2">
+
+            <!-- не появляется белое поле - не могу установить причину-->    
+            <form id="form2" class="new_vacancy_form2">
+                <fieldset style="border: 0; padding: 20px">
+                    <legend class="legend_new_vacancy">Второй шаг создания вакансии</legend>
+
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="reward" class="demanded" style="float:left; margin-right:10px; padding:5px 0;"> Вознаграждение*: </label>
+                        <input style="float: right; width:60%;" type="text" name="reward" id="reward" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+                    <div style="padding:0.1em; margin:0.1em;">
+                        <label for="expireDate" style="float:left; margin-right:10px; padding:5px 0;"> 
+                            Срок вакансии: 
+                        </label>
+                        <input style="float: right; width:60%;" type="text" name="expireDate" id="expireDate" value=""  placeholder="" />
+                        <div style="clear: both"></div>
+                    </div>
+
+                    <input type="submit" value="Далее" id="makeVacancy" style="float: right" onclick="getSecondData()"/>
+                </fieldset>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/newvacancy.js"></script>
+    </body>
+</html>

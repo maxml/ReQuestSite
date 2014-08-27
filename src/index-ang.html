@@ -18,6 +18,9 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css"><!-- RESEST STYLESHEET FILE -->
         <link rel="stylesheet" type="text/css" href="css/style-app.css">
 
+        <!-- Angular carousel -->
+        <link rel="stylesheet" type="text/css" href="js/angular-carousel/angular-carousel.min.css">
+
         <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -33,17 +36,23 @@
             <div id="right-pane" ng-include="'partials/right-pane.html'"> </div>
             <div id="footer" ng-include="'partials/footer.html'"> </div>
         </div>
-        
+
         <!-- Javascript files -->
         <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
-        <script type="text/javascript" src="js/lib/angular.js"></script>
-        <script type="text/javascript" src="js/lib/angular-route.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
-        <script type="text/javascript" src="js/lib/client.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-touch.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-route.min.js"></script>
+        <!--<script type="text/javascript" src="old/lib/jquery.min.js"></script>-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript" src="old/lib/client.js"></script>
+
+
+        <script type="text/javascript" src="js/angular-carousel/angular-carousel.min.js"></script>
 
         <script type="text/javascript" src="js/controller/bootstrap.js"></script>
         <script type="text/javascript" src="js/controller/login.js"></script>
         <script type="text/javascript" src="js/controller/requests.js"></script>
+        <script type="text/javascript" src="js/controller/new-vacancy.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <!-- end Javascript files -->
     </body>

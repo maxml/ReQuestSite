@@ -1,4 +1,4 @@
-var app = angular.module('requestApp', ['ngRoute', 'appControllers']);
+var app = angular.module('requestApp', ['ngRoute', 'appControllers', 'angular-carousel']);
 
 app.config(['$routeProvider',
     function($routeProvider) {
@@ -10,6 +10,10 @@ app.config(['$routeProvider',
                 when('/requests', {
                     templateUrl: 'partials/requests.html',
                     controller: 'RequestsController'
+                }).
+                when('/new-vacancy', {
+                    templateUrl: 'partials/new-vacancy.html',
+                    controller: 'NewVacancyController'
                 }).
                 otherwise({
                     redirectTo: 'home'
@@ -34,4 +38,8 @@ app.config(['$routeProvider',
             $rootScope.user = user;
         });
     }
+
+    $rootScope.newVacancy = function() {
+        location.href = '#/new-vacancy';
+    };
 });
