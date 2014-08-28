@@ -769,15 +769,15 @@ a{
     /* PROFILE: info and pic, button */
 
     #profile #pic{
-        /* width: 15%; */
-        /* height: 15%; */
+         width: 45%; 
+         height: 45%; 
 
-        /* top: 14px; */
-        /* right: 140px; */
+         top: 14px; 
+         right: 140px; 
     }
 
     .info {
-        /* left: 78%; */
+         left: 78%; 
     }
 
     #profile .info>#name{
@@ -788,16 +788,21 @@ a{
     }
 
     .info>#email{
+        position: relative;
+        left: -16px;
         /* font-size: .7em; */
         /* margin-left: -90px; */
     }
 
     .userDetails{
-        /* font-size: .8em; */
-        /* width: 20%; */
+        position: relative;
+        left: -4px
+/*        position: relative;
+         font-size: .7em; 
+         width: 20%; 
 
-        /* top: 2px; */
-        /* right: 20px; */
+         top: 2px; 
+         right: 20px; */
     }
 
     .footer_text {
@@ -1036,11 +1041,11 @@ a{
     }
 
     .info {
-        left: 80%;
+        left: 79%;
     }
 
     .info>#email{
-         font-size: .9em; 
+         font-size: .8em; 
     }
 
     .userDetails{
