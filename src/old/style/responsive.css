@@ -1,0 +1,123 @@
+/* Responsive Styles */
+
+/* Disable iOS/WinMobile font size change */
+@media screen and (max-width: 600px), 
+screen and (max-device-width: 480px){
+    html{
+        -ms-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+/* Blog style ... in process */
+@media screen and (max-width: 768px),
+screen and (max-width: 1200px){
+    #header{
+        /* ??? */
+    }
+}
+
+
+/* 980px */
+
+@media screen and(max-width: 980px){
+    #header{
+        height: 490px;
+    }
+}
+
+
+/* Mini Tablet horizontal specific styles  and (orientation : landscape) */
+
+@media only screen and (max-width : 800px){
+    #header {
+        height: 400px;
+    }
+}
+
+/* Tablet vertical specific styles and (orientation : portrait)*/
+
+@media only screen and (max-width : 768px)  {
+    #header {
+        height: 384px;
+    }
+
+}
+
+/* 650 */
+
+@media screen and(max-width: 650px){
+    #header{
+        height: 325;
+    }
+}
+
+/* Mini Tablet - Portrait */
+
+@media only screen and (max-width : 600px) {
+    #header {
+        height: 300px;
+    }
+
+}
+
+/* iPhone 5 Horizontal */
+
+@media only screen and (max-width : 568px){
+    #header {
+        height: 284px;
+    }
+
+}
+
+/* 520 */
+
+@media screen and(max-width: 520px){
+    #header{
+        height: 260;
+    }
+}
+
+/* All Cell Phones Horizontal */
+
+@media only screen and (max-width : 480px){
+    #header {
+        height: 240px;
+    }
+
+}
+
+/* 360*/
+
+@media only screen and (width : 360px){
+    #header {
+        height: 180px;
+    }
+
+}
+
+/* All Cell Phones Vertical */
+
+@media only screen and (width : 320px){
+    #header {
+        height: 160px;
+    }
+
+}
+
+/* min-width: 1200 */
+/*
+@media screen and(min-width: 1200px){
+    #header{
+        height: 600px;
+    }
+}
+*/
+
+/* ... */
+
+@media screen and (min-width: 1200px){
+    #header{
+        height: 600px;
+    }
+}
