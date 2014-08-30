@@ -7,19 +7,31 @@ appControllers.controller('NewVacancyController', ['$scope', '$rootScope', '$q',
     };
 
     $scope.goToPage = function(page, vacancy) {
-        console.log(vacancy);
         $scope.storeVacancy(vacancy);
-        $scope.page = page;
+        if ($scope.isVacancyValid())
+            $scope.page = page;
     };
 
     $scope.sendVacancyToParse = function() {
         var vacancyEntity = $scope.getEntityFromForm();
-        console.log(vacancyEntity);
         vacancyEntity.save(null, {
-            success: function() {
+            success: function(vacancy) {
                 console.log("success");
+            },
+            error: function(vacancy, error) {
+                console.log(error);
             }
         });
+    };
+
+    $scope.isVacancyValid = function() {
+        if (!$scope.vacancy) {
+            return false;
+        }
+        if (!$scope.vacancy.name) {
+            return false;
+        }
+        return true;
     };
 
     $scope.getEntityFromForm = function() {

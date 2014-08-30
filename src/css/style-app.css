@@ -448,3 +448,7 @@ p {
 .slide-animate.ng-leave.ng-leave-active {
     left: -1000px;
 }
+
+input.ng-invalid {
+    border: 1px solid #e00;
+}

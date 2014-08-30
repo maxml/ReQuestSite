@@ -1,5 +1,5 @@
 <div ng-controller="NewVacancyController">
-    <form novalidate>
+    <form>
 
         <div class="slide-animate-container">
             <div class="slide-animate" ng-include="page">
@@ -11,11 +11,10 @@
 
 <script type="text/ng-template" id="first">
     <button ng-click="goToPage('second', vacancy);"> two </button>
-    <button ng-click="goToPage('third', vacancy);"> three </button>
     <br />
 
     Vacancy name:
-    <input type="text" ng-model="vacancy.name" />
+    <input type="text" ng-model="vacancy.name" required/>
     <br />
     Company name:
     <input type="text" ng-model="vacancy.companyName" />
