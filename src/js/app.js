@@ -15,6 +15,10 @@ app.config(['$routeProvider',
                     templateUrl: 'partials/new-vacancy.html',
                     controller: 'NewVacancyController'
                 }).
+                when('/details', {
+                    templateUrl: 'partials/details.html',
+                    controller: 'RequestsController'
+                }).
                 otherwise({
                     redirectTo: 'home'
                 });
@@ -38,8 +42,4 @@ app.config(['$routeProvider',
             $rootScope.user = user;
         });
     }
-
-    $rootScope.newVacancy = function() {
-        location.href = '#/new-vacancy';
-    };
 });

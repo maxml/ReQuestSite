@@ -1,14 +1,25 @@
-<li ng-repeat="request in requests">
-	<span class="city">
-		{{request.city}}:
-	</span>
-	<span class="company">
-		{{request.company}}:
-	</span>
-	<span class="title">
-		{{request.title}}
-	</span>
-	<span class="reward">
-		({{request.reward}}$)
-	</span>
-</li>
+<div class="outer" >
+    <div ng-repeat="request in requests" class="vacancy" ng-click="linkClicked(request.id)">
+        <div class="row">
+            <span class="vacancy_company left">{{request.company}}</span>
+            <span class="vacancy_reward right">${{request.reward}}</span>
+        </div>
+        <div class="row">
+            <span class="vacancy_title middle">
+                {{request.title}}
+            </span>
+            <br/>
+            <br/>
+        </div>
+        <div class="row"> 
+            <span class="vacancy_expire right">
+                Wanted until: {{request.expireDate}}
+            </span>
+        </div>
+        <div class="row">
+            <span class="vacancy_create">
+                Created at: {{request.createDate}}
+            </span>
+        </div>
+    </div>
+</div>

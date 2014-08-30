@@ -55,6 +55,7 @@ p {
     font-family: HelveticaNeueCyr-Light;
     font-size: 16px;
     margin-left: 26px;
+    cursor: pointer;
 }
 
 #left-pane .new_vacancy:hover {
@@ -104,12 +105,12 @@ p {
 
 #left-pane #switch .allVacancy {
     border-radius: 18px 0 0 18px;
+    cursor: pointer;
 }
 
 #left-pane #switch .myVacancy {
     border-radius: 0 15px 15px 0;   
-    top: 30.5%;
-    left: 9%;
+    cursor: pointer;
 }
 
 #left-pane #switch .checkedVacancy {
@@ -117,15 +118,77 @@ p {
 }
 
 /* ------------------ CONTENT - REQUESTS ------------------ */
+
 #content {
-    font-family: Verdana, Arial, sans-serif; 
+    font-family: HelveticaNeueCyr-Light; 
     font-weight: normal; 
     color: black; 
     font-size: 100%; 
     background-color:#F0EFF5; 
-    width: 50%; 
-    padding: 5px;  
+    width: 55%; 
+    margin: 10px 0 60px 2%;  
     float: left;
+}
+
+#content .outer {
+    width: 100%;
+}
+
+#content .row {
+    display: table-row;
+}
+
+#content .left, #content .right, #content .middle {
+    display: table-cell;
+}
+
+#content .left {
+    float: left;
+}
+
+#content .right {
+    float: right;
+}
+
+#content .middle {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#content .vacancy{
+    display: table;
+    width: 90%;
+    background-color: white;
+    border-radius: 18px;
+    padding: 10px;
+    margin: 30px auto;
+}
+
+#content .vacancy_title{
+    color:#000000;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: xx-large;
+}
+
+#content .vacancy_reward{
+    color:#CC0033;
+    font-size: 40px;
+    margin-right: 30px;
+}
+
+#content .vacancy_salary{
+    font-size:1%;
+    color:black;
+    padding-top: 3%;
+    padding-left:4%;
+}
+
+#content .vacancy_company{
+    font-size: 15px;
+    color:#333333;
+    margin-left: 30px;
 }
 
 
@@ -140,24 +203,25 @@ p {
     color: black; 
     width: 20%; 
     padding: 5px;  
-    float: left;
+    float: right;
 }
 
 #right-pane .info {
     display: block;
-    top: 3vw;
-    left: 80vw;
-    position: absolute;
+    /* top: 3vw; */
+    /* left: 80vw; */
+    /* position: absolute; */
     text-align: center;
 }
 
 #right-pane .info .pic{
-    position: relative;
-    margin-left: 3vw; 
+    /* position: relative; */
+    /* margin-left: 3vw; */ 
     background: #fff;
-    width: 8vw; 
-    height: 8vw;
+    width: 80px; 
+    /* height: 80px; */
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 #right-pane .info img{
@@ -166,7 +230,7 @@ p {
     border: 0;
     margin: 0;
     border-radius: 50%;
-    margin-left: -20px;
+    /* margin-left: -20px; */
 }
 
 #right-pane .info .name{
