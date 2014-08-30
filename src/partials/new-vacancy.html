@@ -1,20 +1,63 @@
-<button ng-click="page='first'"> one </button>
-<button ng-click="page='second'"> two </button>
-<button ng-click="page='third'"> three </button>
+<div ng-controller="NewVacancyController">
+    <form novalidate>
 
-<div class="slide-animate-container">
-    <div class="slide-animate" ng-include="page">
-    </div>
+        <div class="slide-animate-container">
+            <div class="slide-animate" ng-include="page">
+            </div>
+        </div>
+
+    </form>
 </div>
 
 <script type="text/ng-template" id="first">
-    one
+    <button ng-click="goToPage('second', vacancy);"> two </button>
+    <button ng-click="goToPage('third', vacancy);"> three </button>
+    <br />
+
+    Vacancy name:
+    <input type="text" ng-model="vacancy.name" />
+    <br />
+    Company name:
+    <input type="text" ng-model="vacancy.companyName" />
+    <br />
+    Company salary:
+    <input type="text" ng-model="vacancy.companySalary" />
+    <br />
+    City:
+    <input type="text" ng-model="vacancy.city" />
+    <br />
+    Vacancy demands:
+    <input type="text" ng-model="vacancy.demands" />
+    <br />
+    Vacancy terms:
+    <input type="text" ng-model="vacancy.terms" />
+    <br />
+    Company description:
+    <input type="text" ng-model="vacancy.companyDescription" />
+    <br />
+    Company address:
+    <input type="text" ng-model="vacancy.address" />
 </script>
 
 <script type="text/ng-template" id="second">
-    two
+    <button ng-click="goToPage('first', vacancy);"> one </button>
+    <button ng-click="goToPage('third', vacancy);"> three </button>
+    <br />
+
+    Reward:
+    <input type="number" ng-model="vacancy.reward" />
+    Expire:
+    <input type="number" ng-model="vacancy.expire" />
 </script>
 
 <script type="text/ng-template" id="third">
-    three
+    <button ng-click="goToPage('first', vacancy);"> one </button>
+    <button ng-click="goToPage('second', vacancy);"> two </button>
+    <br />
+
+    S is for Success!
+
+    {{vacancy}}
+
+    <button ng-click="sendVacancyToParse()"> Save </button>
 </script>
