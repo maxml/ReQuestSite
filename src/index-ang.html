@@ -13,7 +13,7 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.html">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.html">
         <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.html">
-        
+
         <!--ICON TITLE-->        
         <link rel="shortcut icon" href="ico/favicon.png">
 
@@ -56,6 +56,20 @@
         <script type="text/javascript" src="js/controller/requests-list.js"></script>
         <script type="text/javascript" src="js/controller/new-vacancy.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript">
+                /**
+                 * Switcher functionality
+                 * */
+                $(document).on("click", '#switch .myVacancy', function() {
+                    $(this).addClass('checkedVacancy');
+                    $('#switch .allVacancy').removeClass('checkedVacancy');
+                });
+
+                $(document).on("click", '#switch .allVacancy', function() {
+                    $(this).addClass('checkedVacancy');
+                    $('#switch .myVacancy').removeClass('checkedVacancy');
+                });
+        </script>
         <!-- end Javascript files -->
     </body>
 </html>

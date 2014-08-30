@@ -46,17 +46,15 @@ p {
 
 #left-pane .new_vacancy {
     text-align:center; 
-    padding: 1vw; 
-    border:solid 0.1vw black; 
-    border-radius: 1.5vw; 
+    padding: 12px; 
+    border: solid 1px black; 
+    border-radius: 18px; 
     color:black; 
     background:white;
-    top: 14.5vw;
-    width: 14vw;
-    left: 3vw;
+    width: 200px;
     font-family: HelveticaNeueCyr-Light;
-    font-size: 1.1vw;
-    margin-left: 2.2vw;
+    font-size: 16px;
+    margin-left: 26px;
 }
 
 #left-pane .new_vacancy:hover {
@@ -85,6 +83,39 @@ p {
     margin-left: -25px;
 }
 
+/* ---------------------- LEFT PANE - SWITCHER ---------------------- */
+
+#left-pane #switch .allVacancy {
+    margin-left: 26px;
+}
+
+#left-pane #switch .allVacancy, .myVacancy {
+    text-align: center;
+    border: solid 1px #dcdcdc;
+    width: 74px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    font-family: HelveticaNeueCyr-Light;
+    padding: 12px;
+    margin-top: 20px;
+}
+
+#left-pane #switch .allVacancy {
+    border-radius: 18px 0 0 18px;
+}
+
+#left-pane #switch .myVacancy {
+    border-radius: 0 15px 15px 0;   
+    top: 30.5%;
+    left: 9%;
+}
+
+#left-pane #switch .checkedVacancy {
+    background-color: #F0EFF5;
+}
+
 /* ------------------ CONTENT - REQUESTS ------------------ */
 #content {
     font-family: Verdana, Arial, sans-serif; 
@@ -96,6 +127,7 @@ p {
     padding: 5px;  
     float: left;
 }
+
 
 /* ---------------------- CONTENT - NEW VACANCY ---------------------- */
 
