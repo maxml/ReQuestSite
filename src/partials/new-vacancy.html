@@ -1,18 +1,20 @@
-<ul rn-carousel rn-carousel-indicator rn-carousel-control="false" rn-carousel-pause-on-hover="true" class="my-slider standard ng-cloak">
-    <li>
-        This is a standard template
-        <div class="big">slide #1</div>
-    </li>
-    <li>
-        Here's sophie : <br>
-        <!--<img src="img/ex/sophie.jpeg">-->
-    </li>
-    <li>
-        A friend of mine : <br>
-        <!--<img src="img/ex/grumpy.jpg" height="120">-->
-    </li>
-    <!--    <li>
-            And to finish :
-            <iframe width="100%" height="80%" src="//www.youtube.com/embed/OQSNhk5ICTI" frameborder="0" allowfullscreen></iframe>
-        </li>-->
-</ul>
+<button ng-click="page='first'"> one </button>
+<button ng-click="page='second'"> two </button>
+<button ng-click="page='third'"> three </button>
+
+<div class="slide-animate-container">
+    <div class="slide-animate" ng-include="page">
+    </div>
+</div>
+
+<script type="text/ng-template" id="first">
+    one
+</script>
+
+<script type="text/ng-template" id="second">
+    two
+</script>
+
+<script type="text/ng-template" id="third">
+    three
+</script>
