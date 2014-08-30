@@ -1,4 +1,4 @@
-var app = angular.module('requestApp', ['ngRoute', 'appControllers', 'angular-carousel']);
+var app = angular.module('requestApp', ['ngRoute', 'appControllers', 'angular-carousel', 'ngAnimate']);
 
 app.config(['$routeProvider',
     function($routeProvider) {

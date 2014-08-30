@@ -1,18 +1,62 @@
-<ul rn-carousel rn-carousel-indicator rn-carousel-control="false" rn-carousel-pause-on-hover="true" class="my-slider standard ng-cloak">
-    <li>
-        This is a standard template
-        <div class="big">slide #1</div>
-    </li>
-    <li>
-        Here's sophie : <br>
-        <!--<img src="img/ex/sophie.jpeg">-->
-    </li>
-    <li>
-        A friend of mine : <br>
-        <!--<img src="img/ex/grumpy.jpg" height="120">-->
-    </li>
-    <!--    <li>
-            And to finish :
-            <iframe width="100%" height="80%" src="//www.youtube.com/embed/OQSNhk5ICTI" frameborder="0" allowfullscreen></iframe>
-        </li>-->
-</ul>
+<div ng-controller="NewVacancyController">
+    <form>
+
+        <div class="slide-animate-container">
+            <div class="slide-animate" ng-include="page">
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<script type="text/ng-template" id="first">
+    <button ng-click="goToPage('second', vacancy);"> two </button>
+    <br />
+
+    Vacancy name:
+    <input type="text" ng-model="vacancy.name" required/>
+    <br />
+    Company name:
+    <input type="text" ng-model="vacancy.companyName" />
+    <br />
+    Company salary:
+    <input type="text" ng-model="vacancy.companySalary" />
+    <br />
+    City:
+    <input type="text" ng-model="vacancy.city" />
+    <br />
+    Vacancy demands:
+    <input type="text" ng-model="vacancy.demands" />
+    <br />
+    Vacancy terms:
+    <input type="text" ng-model="vacancy.terms" />
+    <br />
+    Company description:
+    <input type="text" ng-model="vacancy.companyDescription" />
+    <br />
+    Company address:
+    <input type="text" ng-model="vacancy.address" />
+</script>
+
+<script type="text/ng-template" id="second">
+    <button ng-click="goToPage('first', vacancy);"> one </button>
+    <button ng-click="goToPage('third', vacancy);"> three </button>
+    <br />
+
+    Reward:
+    <input type="number" ng-model="vacancy.reward" />
+    Expire:
+    <input type="number" ng-model="vacancy.expire" />
+</script>
+
+<script type="text/ng-template" id="third">
+    <button ng-click="goToPage('first', vacancy);"> one </button>
+    <button ng-click="goToPage('second', vacancy);"> two </button>
+    <br />
+
+    S is for Success!
+
+    {{vacancy}}
+
+    <button ng-click="sendVacancyToParse()"> Save </button>
+</script>
