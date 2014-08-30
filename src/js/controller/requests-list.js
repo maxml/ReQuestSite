@@ -1,6 +1,4 @@
 appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
-        $scope.wat = "swat";
-
         var query = new Parse.Query(Request);
         query.find({
             success: function(result) {
