@@ -30,25 +30,113 @@
     src: url('font/P22UndergroundCYPro-Thin.otf');
 }
 
+/*LIST.CSS*/
+@font-face {
+    font-family:'HelveticaNeueCyr-Black';
+    src: url('font/HelveticaNeueCyr-Black.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-BlackItalic';
+    src: url('font/HelveticaNeueCyr-BlackItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Bold';
+    src: url('font/HelveticaNeueCyr-Bold.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-BoldItalic';
+    src: url('font/HelveticaNeueCyr-BoldItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Heavy';
+    src: url('font/HelveticaNeueCyr-Heavy.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-HeavyItalic';
+    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Italic';
+    src: url('font/HelveticaNeueCyr-Italic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Light';
+    src: url('font/HelveticaNeueCyr-Light.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-LightItalic';
+    src: url('font/HelveticaNeueCyr-LightItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Medium';
+    src: url('font/HelveticaNeueCyr-Medium.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-MediumItalic';
+    src: url('font/HelveticaNeueCyr-MediumItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Roman';
+    src: url('font/HelveticaNeueCyr-Roman.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-Thin';
+    src: url('font/HelveticaNeueCyr-Thin.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-ThinItalic';
+    src: url('font/HelveticaNeueCyr-ThinItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-UltraLight';
+    src: url('font/HelveticaNeueCyr-UltraLight.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-UltraLightItalic';
+    src: url('font/HelveticaNeueCyr-UltraLightItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-HeavyItalic';
+    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
+}
+
+@font-face {
+    font-family:'HelveticaNeueCyr-HeavyItalic';
+    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
+}
+
+
 /*-----------------RESER.CSS-----------------*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, 
-/*body, */
-div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-/*article,*/ 
-aside, canvas, details, embed, 
+b, u, i, center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table, caption, 
+tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -60,32 +148,35 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-/*article,*/ 
-aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
 body {
-/*    line-height: 1;*/
+    line-height: 1;
 }
+
 ol, ul {
     list-style: none;
 }
+
 blockquote, q {
     quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-
+/*STYLE.CSS*/
 body{
     font-size: 15px;
 }
@@ -93,22 +184,18 @@ body{
 #header {
     height: 105vh;
     width: 100%;
-    background-color:white;
-    background-image: url(../img/lp-t.png);
+    background: url(../img/lp-t.png) white;
     background-size: 100% 100%;
     position: relative;
     padding: 0px;
 
 }
 
-
 #topheader{
-    font-family: P22UndergroundCYPro-Thin;
+    font: 2.5vw P22UndergroundCYPro-Thin;
     color: black;
     padding: 0px;
-    font-size: 2.5vw;
-    margin-top: 6vw;
-    margin-left: 46vw;
+    margin: 6vw 0 0 46vw;
     position: absolute;
     width: 20vw;
     text-align: right;
@@ -120,9 +207,8 @@ body{
     width: 25vw;
     height: 10vw;
     margin-left: 20vw;
-    font-family: P22UndergroundCYPro-Thin;
+    font: 2.4vw P22UndergroundCYPro-Thin;
     color: black;
-    font-size: 2.4vw;
     padding: 0px;
 }
 
@@ -141,29 +227,17 @@ div.redline{
     height: 7.4vw;
     position:relative;
     text-align: center;
-
 }
 
 #redlinefont{
     color: white;
-    font-size: 4vw;
+    font: 4vw P22UndergroundCYPro-Medium;
     position:absolute;
-    margin-top: 2vw;
-    font-family: P22UndergroundCYPro-Medium;
-    margin-left: 35vw;
-
+    margin: 2vw 0 0 35vw;
 }
 
 div.greyline{
-    //background-color: #E3D3AF;
-    //height:70px;
     width:100%;
-    //margin-top: 0px;
-
-}
-
-div.greybox{
-    /* margin-left:3vw; */
 }
 
 .button2{
@@ -451,123 +525,19 @@ screen and (max-width: 1200px){
 /*
 ----------------------LIST.CSS-----------------------
 */
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Black';
-    src: url('font/HelveticaNeueCyr-Black.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-BlackItalic';
-    src: url('font/HelveticaNeueCyr-BlackItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Bold';
-    src: url('font/HelveticaNeueCyr-Bold.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-BoldItalic';
-    src: url('font/HelveticaNeueCyr-BoldItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Heavy';
-    src: url('font/HelveticaNeueCyr-Heavy.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-HeavyItalic';
-    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Italic';
-    src: url('font/HelveticaNeueCyr-Italic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Light';
-    src: url('font/HelveticaNeueCyr-Light.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-LightItalic';
-    src: url('font/HelveticaNeueCyr-LightItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Medium';
-    src: url('font/HelveticaNeueCyr-Medium.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-MediumItalic';
-    src: url('font/HelveticaNeueCyr-MediumItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Roman';
-    src: url('font/HelveticaNeueCyr-Roman.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-Thin';
-    src: url('font/HelveticaNeueCyr-Thin.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-ThinItalic';
-    src: url('font/HelveticaNeueCyr-ThinItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-UltraLight';
-    src: url('font/HelveticaNeueCyr-UltraLight.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-UltraLightItalic';
-    src: url('font/HelveticaNeueCyr-UltraLightItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-HeavyItalic';
-    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
-}
-
-@font-face {
-    font-family:'HelveticaNeueCyr-HeavyItalic';
-    src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
-}
-
 body{
     background-color:F0EFF4;
 }
 
 #col1,#profile {
-    background-color:white;
-    font-family: Verdana, Arial, sans-serif; 
-    font-weight: bold; 
-    font-size: 80%; 
-    color: white; 
+    background-color: white;
     width: 20%; 
-    padding: 5px;  
-    float: left;
-    height: 100%;
 }
 
 #main{
-    font-family: Verdana, Arial, sans-serif; 
-    font-weight: bold; 
-    font-size: 80%; 
     background-color: #DADADA; 
     width: 55%; 
-    padding: 5px;  
-    float: left;
-    height: 100%; 
-} 
+ } 
 
 #col1, #main, #profile { 
     font-family: "Times New Roman", Times, serif; 
@@ -575,6 +545,8 @@ body{
     font-weight: normal; 
     color: black; 
     height: 100%;
+    float: left;
+    padding: 5px;
 }
 
 .tr { 
@@ -633,7 +605,6 @@ body{
     background-color: #F0EFF5;
 
 }
-
 
 .vacancy{
     width: 50%;
@@ -846,16 +817,6 @@ li>img{
 }
 
 /* ----------------------- Articles ----------------------- */
-.article{
-/*    width: auto;
-    height: auto;
-    background-color: white;
-    border-radius: 22px;
-    margin: 15px;
-    text-align: justify;
-    padding: 5px 10px 0px 10px;*/
-}
-
 .article_title{
     color:#CC0033;
     font-size: 25px;
