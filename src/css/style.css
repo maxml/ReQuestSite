@@ -1,36 +1,3 @@
-/***---------------------- Font Family ----------------------***/
-
-@font-face {
-    font-family:'P22UndergroundCYPro-Book';
-    src: url('font/P22UndergroundCYPro-Book.otf');
-}
-
-@font-face {
-    font-family:'P22UndergroundCYPro-Demi';
-    src: url('font/P22UndergroundCYPro-Demi.otf');
-}
-
-@font-face {
-    font-family:'P22UndergroundCYPro-Heavy';
-    src: url('font/P22UndergroundCYPro-Heavy.otf');
-}
-
-@font-face {
-    font-family:'P22UndergroundCYPro-Light';
-    src: url('font/P22UndergroundCYPro-Light.otf');
-}
-
-@font-face {
-    font-family:'P22UndergroundCYPro-Medium';
-    src: url('font/P22UndergroundCYPro-Medium.otf');
-}
-
-@font-face {
-    font-family:'P22UndergroundCYPro-Thin';
-    src: url('font/P22UndergroundCYPro-Thin.otf');
-}
-
-/*LIST.CSS*/
 @font-face {
     font-family:'HelveticaNeueCyr-Black';
     src: url('font/HelveticaNeueCyr-Black.otf');
@@ -121,434 +88,37 @@
     src: url('font/HelveticaNeueCyr-HeavyItalic.otf');
 }
 
-
-/*-----------------RESER.CSS-----------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,table, caption, 
-tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*STYLE.CSS*/
-body{
-    font-size: 15px;
-}
-
-#header {
-    height: 105vh;
-    width: 100%;
-    background: url(../img/lp-t.png) white;
-    background-size: 100% 100%;
-    position: relative;
-    padding: 0px;
-
-}
-
-#topheader{
-    font: 2.5vw P22UndergroundCYPro-Thin;
-    color: black;
-    padding: 0px;
-    margin: 6vw 0 0 46vw;
-    position: absolute;
-    width: 20vw;
-    text-align: right;
-}
-
-#leftheader{
-    position:absolute;
-    bottom: 5vw;
-    width: 25vw;
-    height: 10vw;
-    margin-left: 20vw;
-    font: 2.4vw P22UndergroundCYPro-Thin;
-    color: black;
-    padding: 0px;
-}
-
-div.gradient{
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f7edd4), color-stop(100%,#e6ce9e));
-    background-image: url(../img/lpf.png);
-    background-size: 100% 100%;
-    height: 28vw;
-    width: 100%; 
-}
-
-div.redline{
-    width: 100%;
-    background-color:#DC4B4E;
-    color: white;
-    height: 7.4vw;
-    position:relative;
-    text-align: center;
-}
-
-#redlinefont{
-    color: white;
-    font: 4vw P22UndergroundCYPro-Medium;
-    position:absolute;
-    margin: 2vw 0 0 35vw;
-}
-
-div.greyline{
-    width:100%;
-}
-
-.button2{
-    text-decoration:none;
-    text-align:center; 
-    padding:1vw 1.5vw; 
-    border:solid 0.2vw #dc4b4d; 
-    border-radius: 1vw; 
-    color:#dc4b4d; 
-    background:#f8eecb;
-    position:absolute;
-    bottom: 7.5vw;
-    width: 9vw;
-    height: 3.5vw;
-    margin-left: 50vw;
-    font-family: P22UndergroundCYPro-Heavy;
-    font-size: 2.5vw;
-}
-
-.button2:hover{
-    text-decoration:none;
-    text-align:center; 
-    padding:1vw 1.5vw; 
-    border:solid 0.2vw #dc4b4d; 
-    border-radius: 1vw; 
-    color:#f8eecb; 
-    background:#dc4b4d;
-    position:absolute;
-    bottom: 7.5vw;
-    width: 9vw;
-    height: 3.5vw;
-    margin-left: 50vw;
-    font-family: P22UndergroundCYPro-Heavy;
-    font-size: 2.5vw;
-}
-
-.button{ 
-    text-decoration:none;
-    text-align:center; 
-    padding:1vw 2vw; 
-    border:solid 0.2vw #dc4b4d; 
-    border-radius: 1vw;
-    color:#f8eecb; 
-    background:#dc4b4d;  
-    position:absolute;
-    margin-top: 18vw;
-    width: 16vw;
-    height: 5vw;
-    margin-left: 30vw;
-    font-family: P22UndergroundCYPro-Heavy;
-    font-size: 4vw;
-}
-
-.button:hover{
-    text-decoration:none;
-    text-align:center; 
-    padding:1vw 2vw; 
-    border:solid 0.2vw #dc4b4d; 
-    border-radius: 1vw;
-    color:#dc4b4d; 
-    background:#f8eecb;  
-    position:absolute;
-    margin-top: 18vw;
-    width: 16vw;
-    height: 5vw;
-    margin-left: 30vw;
-    font-family: P22UndergroundCYPro-Heavy;
-    font-size: 4vw;
-}
-
-ol{
-    list-style-type: none;
-    font-family: P22UndergroundCYPro-Light;
-    color: black;
-    position:absolute;
-    font-size: 1.9vw;
-}
-
-.left_ol{
-    width:40%;
-    height:40%;
-    float: left;
-    text-align: left;
-    margin-top: 4vw;
-    margin-left: 5vw;
-}
-
-.right_ol{
-    width:40%;
-    height:40%;
-    float:right;
-    text-align: right;
-    margin-top: 4vw;
-    margin-right: 8vw;
-}
-
-.bottom_gradient{
-    position: absolute;
-
-    margin-top: 18vw;
-
-    width: 60vw;
-    margin-left: 4vw;
-    font-family: P22UndergroundCYPro-Thin;
-    font-size: 2.1vw;
-}
-
-.ceo{
-    /* color: white; */ 
-    font-family:P22UndergroundCYPro-Heavy; 
-    font-size: 2.5vw; 
-    margin-top: 0vw;
-    padding-top: 1.5vw;
-    margin-left: 20vw;
-    /* position: absolute; */
-    text-align: center;
-    color: #DC4B4E;
-}
-
-/*** ---------------------- SOCIAL ICONS ---------------------- ***/
-
-#contact_socials {
-    display: inline;
-    margin-right: auto;
-    margin-top: 100px;
-} 
-
-#contact_socials li {
-    float: left;
-/*     margin: 10px; */
-    //margin-right: 10px;
-
-} 
-
-#contact_socials li a.googleplus {    background-position: -120px 0px } 
-
-#contact_socials li a.googleplus:active {    background-color: #333333 } 
-
-#contact_socials li a.googleplus:hover {
-    background-color: #DC5442;
-    background-position: -120px -60px;
-} 
-
-#contact_socials li a.linkedin {    background-position: -300px 0px } 
-
-#contact_socials li a.linkedin:active {    background-color: #333333 } 
-
-#contact_socials li a.linkedin:hover {
-    background-color: #096C9B;
-    background-position: -300px -60px;
-} 
-
-#contact_socials li a.facebook {    background-position: 0px 0px;} 
-
-#contact_socials li a.facebook:active {    background-color: #333333 } 
-
-#contact_socials li a.facebook:hover {
-    background-color: #3560A0;
-    background-position: 0px -60px;
-} 
-
-#contact_socials li a.vimeo {    background-position: -420px 0px } 
-
-#contact_socials li a.vimeo:active {    background-color: #333333 } 
-
-#contact_socials li a.vimeo:hover {
-    background-color: #00B9EA;
-    background-position: -420px -60px;
-} 
-
-#contact_socials li a {
-    -moz-border-radius: 8px;
-    -moz-transition: 200ms linear background-color, 250ms ease-in background-position;
-    -ms-transition: 200ms linear background-color, 250ms ease-in background-position;
-    -o-transition: 200ms linear background-color, 250ms ease-in background-position;
-    -webkit-border-radius: 8px;
-    -webkit-transition: 200ms linear background-color, 250ms ease-in background-position;
-    background-color: transparent;
-    background-image: url(../img/contact_socials_sprite.png);
-    background-repeat: no-repeat;
-    border-radius: 8px;
-    display: list-item;
-    height: 50px;
-    transition: 200ms linear background-color, 250ms ease-in background-position;
-    width: 50px;
-}
-
-
-/*RESPONSIVE STYLE index.html*/
-/* Responsive Styles */
-/* Disable iOS/WinMobile font size change */
-@media screen and (max-width: 600px), 
-screen and (max-device-width: 480px){
-    html{
-        -ms-text-size-adjust: none;
-        -webkit-text-size-adjust: none;
-    }
-}
-
-/* Blog style ... in process */
-@media screen and (max-width: 768px),
-screen and (max-width: 1200px){
-    #header{
-        /* ??? */
-    }
-}
-
-/* 980px */
-@media screen and(max-width: 980px){
-    #header{
-        height: 490px;
-    }
-}
-
-
-/* Mini Tablet horizontal specific styles  and (orientation : landscape) */
-@media only screen and (max-width : 800px){
-    #header {
-        height: 400px;
-    }
-}
-
-/* Tablet vertical specific styles and (orientation : portrait)*/
-@media only screen and (max-width : 768px)  {
-    #header {
-        height: 384px;
-    }
-}
-
-/* 650 */
-@media screen and(max-width: 650px){
-    #header{
-        height: 325;
-    }
-}
-
-/* Mini Tablet - Portrait */
-@media only screen and (max-width : 600px) {
-    #header {
-        height: 300px;
-    }
-}
-
-/* iPhone 5 Horizontal */
-@media only screen and (max-width : 568px){
-    #header {
-        height: 284px;
-    }
-}
-
-/* 520 */
-@media screen and(max-width: 520px){
-    #header{
-        height: 260;
-    }
-}
-
-/* All Cell Phones Horizontal */
-@media only screen and (max-width : 480px){
-    #header {
-        height: 240px;
-    }
-}
-
-/* 360*/
-@media only screen and (width : 360px){
-    #header {
-        height: 180px;
-    }
-}
-
-/* All Cell Phones Vertical */
-@media only screen and (width : 320px){
-    #header {
-        height: 160px;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    #header{
-        height: 600px;
-    }
-}
-
-/*
-----------------------LIST.CSS-----------------------
-*/
 body{
     background-color:F0EFF4;
 }
-
 #col1,#profile {
-    background-color: white;
+    background-color:white;
+    font-family: Verdana, Arial, sans-serif; 
+    font-weight: bold; 
+    font-size: 80%; 
+    color: white; 
     width: 20%; 
+    padding: 5px;  
+    float: left;
+    height: 100%;
 }
-
 #main{
+    font-family: Verdana, Arial, sans-serif; 
+    font-weight: bold; 
+    font-size: 80%; 
     background-color: #DADADA; 
     width: 55%; 
- } 
-
+    padding: 5px;  
+    float: left;
+    height: 100%; 
+} 
 #col1, #main, #profile { 
     font-family: "Times New Roman", Times, serif; 
     font-size: 100%; 
     font-weight: normal; 
     color: black; 
     height: 100%;
-    float: left;
-    padding: 5px;
 }
-
 .tr { 
     clear: both;
 }
@@ -605,6 +175,7 @@ body{
     background-color: #F0EFF5;
 
 }
+
 
 .vacancy{
     width: 50%;
@@ -682,6 +253,7 @@ li>img{
 
 .menu{
     display: block;
+
     padding-left: 90px;
 }
 
@@ -817,6 +389,16 @@ li>img{
 }
 
 /* ----------------------- Articles ----------------------- */
+.article{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 22px;
+    margin: 15px;
+    text-align: justify;
+    padding: 5px 10px 0px 10px;
+}
+
 .article_title{
     color:#CC0033;
     font-size: 25px;
@@ -862,9 +444,6 @@ li>img{
 }
 
 .article{
-    font-family: "Times New Roman";
-    font-size: 1.1em;
-    line-height: 1.4;
     width: auto;
     height: auto;
     background-color: white;
@@ -1105,6 +684,7 @@ nav#menu{
 #link2,
 a{
     cursor: pointer;
+
 }
 
 /* show link */
@@ -1113,6 +693,9 @@ a{
     /* margin-top: 30px; */
     position: absolute;
 }
+
+
+
 
 
 /*ARTICLE RESPONSIVE STYLE*/
