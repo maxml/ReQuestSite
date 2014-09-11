@@ -170,6 +170,7 @@ p {
 #content .vacancy_title{
     color:#000000;
     font-size: xx-large;
+    padding: 5px;
 }
 
 #content .vacancy_reward{
