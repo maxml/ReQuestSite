@@ -1,14 +1,22 @@
-appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
+appControllers.controller('MyRequestsController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
 
-        var query = new Parse.Query(Request);
-        query.find({
-            success: function(result) {
-                $scope.$apply(function() {
-                    $scope.requests = convertRequestsToDtos(result);
-                });
-//                console.log(result);
-            }
-        });
+        $scope.swat = 'wat';
+        var load = function() {
+
+            var user = Parse.User.current();
+
+            var query = new Parse.Query(Request);
+            query.equalTo("user", user);
+            query.find({
+                success: function(result) {
+                    $scope.$apply(function() {
+                        $scope.requests = convertRequestsToDtos(result);
+                    });
+                    console.log(result);
+                }
+            });
+        };
+        load();
 
         convertRequestsToDtos = function(parseRequests) {
             var result = [];
@@ -37,3 +45,4 @@ appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', f
             location.href = "#/details"
         };
     }]);
+

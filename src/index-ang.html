@@ -56,6 +56,7 @@
         <script type="text/javascript" src="js/controller/bootstrap.js"></script>
         <script type="text/javascript" src="js/controller/login.js"></script>
         <script type="text/javascript" src="js/controller/requests-list.js"></script>
+        <script type="text/javascript" src="js/controller/my-requests-list.js"></script>
         <script type="text/javascript" src="js/controller/new-vacancy.js"></script>
         <script type="text/javascript" src="js/controller/details.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
@@ -66,11 +67,13 @@
                 $(document).on("click", '#switch .myVacancy', function() {
                     $(this).addClass('checkedVacancy');
                     $('#switch .allVacancy').removeClass('checkedVacancy');
+                    location.href = "#/my-requests";
                 });
 
                 $(document).on("click", '#switch .allVacancy', function() {
                     $(this).addClass('checkedVacancy');
                     $('#switch .myVacancy').removeClass('checkedVacancy');
+                    location.href = "#/requests";
                 });
         </script>
         <!-- end Javascript files -->

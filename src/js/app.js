@@ -11,6 +11,10 @@ app.config(['$routeProvider',
                     templateUrl: 'partials/requests.html',
                     controller: 'RequestsController'
                 }).
+                when('/my-requests', {
+                    templateUrl: 'partials/my-requests.html',
+                    controller: 'MyRequestsController'
+                }).
                 when('/new-vacancy', {
                     templateUrl: 'partials/new-vacancy.html',
                     controller: 'NewVacancyController'
