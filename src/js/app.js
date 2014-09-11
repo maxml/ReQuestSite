@@ -17,7 +17,7 @@ app.config(['$routeProvider',
                 }).
                 when('/details', {
                     templateUrl: 'partials/details.html',
-                    controller: 'RequestsController'
+                    controller: 'DetailsController'
                 }).
                 otherwise({
                     redirectTo: 'home'

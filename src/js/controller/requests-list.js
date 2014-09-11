@@ -6,7 +6,7 @@ appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', f
                 $scope.$apply(function() {
                     $scope.requests = convertRequestsToDtos(result);
                 });
-                console.log(result);
+//                console.log(result);
             }
         });
 
@@ -30,26 +30,10 @@ appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', f
             return result;
         };
 
-        $scope.vacancy = "swat";
+        $rootScope.id = '';
         $scope.linkClicked = function(id) {
-
-            console.log(id);
-            var query = new Parse.Query(Request);
-            query.equalTo("objectId", id);
-
-            query.find({
-                success: function(results) {
-                    // Do something with the returned Parse.Object values
-                    var object = results[0];
-                    vacancy = object;
-                    console.log(vacancy);
-
-                    location.href = "#/details"
-//                    showDetails();
-                },
-                error: function(error) {
-                    console.log("Error: " + error.code + " " + error.message);
-                }
-            });
-        }
+            console.log("Id="+id);
+            localStorage.id = id;
+            location.href = "#/details"
+        };
     }]);
