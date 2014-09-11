@@ -3,7 +3,7 @@ appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', fu
         $scope.vacancy = {};
 
         $scope.getRespondForm = function() {
-            alert(123);
+            location.href = "#/responds";
         };
 
         $scope.fillDetailForm = function() {
@@ -11,7 +11,6 @@ appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', fu
             console.log(id);
 
             var query = new Parse.Query(Request);
-//            query.equalTo("objectId", id);
             query.get(id, {
                 success: function(results) {
 
