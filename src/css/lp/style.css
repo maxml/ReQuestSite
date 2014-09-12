@@ -434,15 +434,17 @@ ul#works_filter li a:hover, ul#works_filter li a.selected {
 
     margin-top:20px;
 
-    background:#DADADA;
+    background: white;
 
     border-radius:2em;
+    
+    border: 2px solid #DADADA;
 
     line-height:45px;
 
-    height:45px;
+    height:48px;
 
-    width:142px;
+    width:150px;
 
 }
 
