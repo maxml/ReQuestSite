@@ -1,7 +1,61 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-Hello details {{vacancy}}
+<div id="details">
+    <form id="form1" class="details_form">
+        <fieldset class="details_fieldset">
+            <legend class="legend">Детали вакансии</legend>
+
+            <div class="line">
+                <label> Название вакансии: </label>
+                <span>{{vacancy.title}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label> Вознаграждение: </label>
+                <span>{{vacancy.reward}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Срок вакансии:</label>
+                <span>{{vacancy.expire}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Название компании:</label>
+                <span>{{vacancy.company}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Требования:</label>
+                <span>{{vacancy.demands}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Условия:</label>
+                <span>{{vacancy.terms}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Зарплата:</label>
+                <span>{{vacancy.salary}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Город:</label>
+                <span>{{vacancy.city}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Адрес компании:</label>
+                <span>{{vacancy.c_adress}}</span>
+                <div style="clear: both"></div>
+            </div>
+            <div class="line">
+                <label>Описание компании:</label>
+                <span>{{vacancy.c_desc}}</span>
+                <div style="clear: both"></div>
+            </div>
+
+            <input type="button" value="Ответы" style="float: right" ng-click="getRespondForm()"/>
+            <input type="button" value="Назад" style="float: left" onclick="history.go(-1)"/><!-- location.href = '#/requests' -->
+        </fieldset>
+    </form>
+</div>

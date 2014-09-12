@@ -553,7 +553,7 @@ body{
     clear: both;
 }
 
-.new_vacancy{
+.new_vacancy_button{
     text-align:center; 
     padding: 1%; 
     border:solid 0.1% black; 
@@ -567,7 +567,7 @@ body{
     font-size: 1.1%;
     margin-left: 2.2%;
 }
-.new_vacancy:hover{
+.new_vacancy_button:hover{
     color:#CC0033;
     border-color: #CC0033;
 }

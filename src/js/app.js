@@ -11,13 +11,21 @@ app.config(['$routeProvider',
                     templateUrl: 'partials/requests.html',
                     controller: 'RequestsController'
                 }).
+                when('/my-requests', {
+                    templateUrl: 'partials/my-requests.html',
+                    controller: 'MyRequestsController'
+                }).
                 when('/new-vacancy', {
                     templateUrl: 'partials/new-vacancy.html',
                     controller: 'NewVacancyController'
                 }).
                 when('/details', {
                     templateUrl: 'partials/details.html',
-                    controller: 'RequestsController'
+                    controller: 'DetailsController'
+                }).
+                when('/responds', {
+                    templateUrl: 'partials/responds.html',
+                    controller: 'RespondsController'
                 }).
                 otherwise({
                     redirectTo: 'home'
@@ -29,6 +37,7 @@ app.config(['$routeProvider',
     User = Parse.Object.extend("User");
     Wallet = Parse.Object.extend("Wallet");
     Request = Parse.Object.extend("Requests");
+    Responds = Parse.Object.extend("Responds");
 
     // Load user from session if exists
     var currentParseUser = User.current();

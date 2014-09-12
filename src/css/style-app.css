@@ -1,8 +1,8 @@
 body {}
 
 p {
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
+    -webkit-margin-before: 0.1em;
+    -webkit-margin-after: 0.1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
@@ -44,7 +44,7 @@ p {
     height: 188px;
 }
 
-#left-pane .new_vacancy {
+#left-pane .new_vacancy_button {
     text-align:center; 
     padding: 12px; 
     border: solid 1px black; 
@@ -59,7 +59,7 @@ p {
     outline: none;
 }
 
-#left-pane .new_vacancy:hover {
+#left-pane .new_vacancy_button:hover {
     color:#CC0033;
     border-color: #CC0033;
 }
@@ -192,9 +192,101 @@ p {
     margin-left: 30px;
 }
 
+/* ------------------ CONTENT - DETAILS --------------------- */
 
-/* ---------------------- CONTENT - NEW VACANCY ---------------------- */
+#content #details {
+    margin: 30px;
+    background-color: white;
+    border-radius: 18px;
+}
 
+#content #details .details_form {
+    padding: 5px;
+}
+
+#content #details .details_form .details_fieldset {
+    border: 0; 
+    padding: 20px;
+}
+
+#content #details .details_form .line, 
+#content #new_vacancy .line {
+    padding:0.1em; 
+    margin:0.1em;
+}
+
+#content #details .details_form .legend, 
+#content #new_vacancy .legend  {
+    font-family: HelveticaNeueCyr-Light; 
+    text-align: center;
+    color: #DC4B4E;
+    font-size:  25px;
+}
+
+#content #details .details_form .line label {
+    float:left; 
+    margin-right:10px; 
+    padding:5px 0;
+    font-weight: bold;
+}
+
+#content #details .details_form .line span {
+    float: right; 
+    width: 50%;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content #details .details_form input[type="button"],
+#content #new_vacancy button {
+    text-align:center; 
+    padding: 12px; 
+    border:solid 1px black; 
+    border-radius: 15px; 
+    color:black; 
+    background:white;
+    position:relative;
+    font-family: HelveticaNeueCyr-Light;
+    font-size: 14px;
+    margin-top: 15px;
+}
+#content #details .details_form input[type="button"] {
+    width: 100px;
+}
+
+
+#content #details .details_form input[type="button"]:hover,
+#content #new_vacancy button:hover {
+    border:solid 0.1vw #CC0033;
+    color: #CC0033;
+}
+
+/* ------------------ CONTENT - NEW VACANCY ----------------- */
+
+#content #new_vacancy {
+    margin: 30px;
+    background-color: white;
+    border-radius: 18px;
+    padding: 15px;
+}
+
+#content #new_vacancy .line label {
+    float:left;
+    width:40%;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    font-weight:bold;
+}
+
+#content #new_vacancy .line input {
+    text-align: center;
+}
+
+#content #new_vacancy button {
+    width:150px;
+}
 
 /* ------------------ RIGHT PANE - PROFILE ------------------ */
 #right-pane {
@@ -213,16 +305,18 @@ p {
     /* left: 80vw; */
     /* position: absolute; */
     text-align: center;
+    margin-top: 20px;
 }
 
 #right-pane .info .pic{
     /* position: relative; */
-    /* margin-left: 3vw; */ 
+    /* margin-left: 3vw; */  
     background: #fff;
     width: 80px; 
     /* height: 80px; */
     border-radius: 50%;
     margin: 0 auto;
+    padding-bottom: 15px;
 }
 
 #right-pane .info img{
@@ -237,12 +331,15 @@ p {
 #right-pane .info .name{
     font-family: HelveticaNeueCyr-Medium;
     color: #CC0033;
+    font-size: 1.5vw;
+    margin-bottom: 15px;
 }
 
 #right-pane .info .email{
     font-family: HelveticaNeueCyr-Light;
     font-size: 1vw;
     color: black;
+    padding-bottom: 20px;
 }
 
 #right-pane .info .logout{
@@ -318,31 +415,31 @@ p {
 }
 
 /*#footer {
-    clear: both;
-    width:100%;
-    height: 60px;
-    position: fixed;
-    bottom:0;
-    left:0;
-    background:#F0EFF5;
+clear: both;
+width:100%;
+height: 60px;
+position: fixed;
+bottom:0;
+left:0;
+background:#F0EFF5;
 }
 
 #footer .wrapper {
-    min-height:100%;
-     position: fixed; 
-    bottom: 0px;
-    overflow: auto;
-    margin-bottom: 80px;
+min-height:100%;
+position: fixed; 
+bottom: 0px;
+overflow: auto;
+margin-bottom: 80px;
 }
 
 #footer .ceo{
-    float: right;
-    font-family:HelveticaNeueCyr-Light; 
-    font-size: 2.5vw; 
-    padding-top: 10px;
-    margin-right: 30px;
-    text-align: center;
-    color: #DC4B4E;
+float: right;
+font-family:HelveticaNeueCyr-Light; 
+font-size: 2.5vw; 
+padding-top: 10px;
+margin-right: 30px;
+text-align: center;
+color: #DC4B4E;
 }*/
 
 /*** ---------------------- FOOTER - SOCIAL ICONS ---------------------- ***/
