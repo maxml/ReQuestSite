@@ -1,22 +1,41 @@
 body, p, div, h1, h2, h3, h4, h5, h6, table, tbody, tr, td, span, blockquote, a, abbr, address, cite, code, img, ul, ol, li, dl, dd, dt, form, label, fieldset, caption, input, textarea, button {
+
     border:0;
+
     outline:0;
+
     font-family:Arial, Helvetica, Sans-Serif;
+
     color:#000;
+
     vertical-align:baseline;
+
     list-style:none;
+
     text-decoration:none;
+
     line-height:1.5em;
+
     margin:0;
+
     padding:0
+
 }
 
-#horizontal-ad {
+#horizontal-ad
+
+{
+
     display:block;
+
 }
 
-#vertical-ad{
+#vertical-ad
+
+{
+
     display:none;
+
 }
 
 #bsads
@@ -493,7 +512,7 @@ ul.pagination a:link, ul.pagination a:visited {
 
     text-decoration:none;
 
-    background:url(../../img/lp/bg/15.png);
+    background:url(./images/bg/15.png);
 
     padding:5px 10px
 
@@ -716,9 +735,13 @@ h4.blue {
 }
 
 ul li {
+
     line-height:2;
-    background:url(.../../img/lp/bullet.jpg) no-repeat left center;
+
+    background:url(../images/icons/bullet.jpg) no-repeat left center;
+
     padding-left:15px;
+
 }
 
 a:link, a:visited {
@@ -728,12 +751,19 @@ a:link, a:visited {
 }
 
 input, textarea, button {
-    background:url(../../img/lp/15.png);
+
+    background:url(./images/bg/15.png);
+
     clear:both;
+
     float:left;
+
     font-style:italic;
+
     margin-bottom:1px;
+
     padding:10px
+
 }
 
 input {
@@ -802,7 +832,7 @@ div.misc a, a:hover {
 
 div.blogpost a.readmore:hover, ul.pagination a:hover, ul.pagination a.active_page {
 
-    background:url(../../img/lp/50.png);
+    background:url(./images/bg/50.png);
 
     color:#FFF
 
@@ -956,7 +986,7 @@ ul.sublist li {
 
 ul.sublist li {
 
-    background: url('.../../img/lp/ico-arrow.gif') 0px 10px no-repeat;
+    background: url('../images/ico-arrow.gif') 0px 10px no-repeat;
 
     font-size:12px;
 
