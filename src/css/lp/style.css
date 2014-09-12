@@ -115,7 +115,7 @@ body, p, div, h1, h2, h3, h4, h5, h6, table, tbody, tr, td, span, blockquote, a,
 
 body {
 
-    background: white;
+    background: #DADADA;
 
     font-size:14px
 
@@ -139,7 +139,7 @@ div#sidebar {
 
     float:left;
 
-    background: #CC0033;
+    background: black;
 
     border-right:1px solid #2e2f2f;
 
@@ -235,15 +235,15 @@ ul#navigation li a:link, ul#navigation li a:visited {
 
     padding:5px 10px 5px 0;
 
-    color: black;
+    color: #eee;
 
 }
 
 ul#navigation li a:hover, ul#navigation li a.active {
 
-    background:#1b1b1b;
+    background: white;
 
-    color:#FFF;
+    color: black;
 
 }
 
@@ -261,7 +261,7 @@ div#container {
 
     padding-top:0;
 
-    background: #DADADA;
+    background: white;
 
 }
 
