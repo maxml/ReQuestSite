@@ -1,8 +1,10 @@
 appControllers.controller('RespondsController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
 
-        $scope.swat = 'wat';
+        // Test value
+        $scope.swat = 'watRespond';
         var load = function() {
-
+            
+            var id = localStorage.id;
             var user = Parse.User.current();
 
             var query = new Parse.Query(Request);
