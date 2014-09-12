@@ -695,6 +695,8 @@ h4.blue {
     text-shadow:1px 1px 0px #84bbdb;
 
     font-size:28px;
+    
+    text-align: center;
 
 }
 
@@ -808,9 +810,7 @@ div.page img {
 
     border:1px solid #73aaca;
 
-    max-width:94%
-
-}
+    max-width:94%}
 
 a#logo:hover, a.facebook:hover, a.twitter:hover, a.linkedin:hover, a.dribbble:hover, div.image_gallery img:hover {
 
