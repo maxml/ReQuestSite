@@ -59,7 +59,7 @@ div#sidebar {
     width:220px;
     height:100%;
     float:left;
-    background: black;
+    background: #1a1a1a;
     border-right:1px solid #2e2f2f;
     position:fixed
 }
@@ -108,9 +108,15 @@ ul#navigation li a:link, ul#navigation li a:visited {
     padding:5px 10px 5px 0;
     color: #eee;
 }
-ul#navigation li a:hover, ul#navigation li a.active {
-    background: white;
-    color: black;
+ul#navigation li a:hover{
+    background: #525252;
+    color: white;
+}
+
+
+ul#navigation li a.active {
+    background: #3a3a3a;
+    color: white;
 }
 div#container {
     width:730px;
