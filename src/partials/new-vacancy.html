@@ -12,63 +12,63 @@
 
 <script type="text/ng-template" id="first">
     <fieldset>
-        <legend class="legend"> Создание новой вакансии - Шаг 1</legend>
-        <br/>
+    <legend class="legend"> Создание новой вакансии - Шаг 1</legend>
+    <br/>
 
-        <div class="line">
-            <label>Vacancy name:</label>
-            <input type="text" ng-model="vacancy.name" required />
-        </div>
+    <div class="line">
+    <label>Vacancy name:</label>
+    <input type="text" ng-model="vacancy.name" required />
+    </div>
 
-        <div class="line">
-            <label>Company name:</label>
-            <input type="text" ng-model="vacancy.companyName" />
-        </div>
-        <div class="line">
-            <label>Company salary:</label>
-            <input type="text" ng-model="vacancy.companySalary" />
-        </div>
-        <div class="line">
-            <label>City:</label>
-            <input type="text" ng-model="vacancy.city" />
-        </div>
-        <div class="line">
-            <label>Vacancy demands:</label>
-            <input type="text" ng-model="vacancy.demands" />
-        </div>
-        <div class="line">
-            <label>Vacancy terms:</label>
-            <input type="text" ng-model="vacancy.terms" />
-        </div>
-        <div class="line">
-            <label>Company description:</label>
-            <input type="text" ng-model="vacancy.companyDescription" />
-        </div>
-        <div class="line">
-            <label>Company address:</label>
-            <input type="text" ng-model="vacancy.address" />
-        </div>
+    <div class="line">
+    <label>Company name:</label>
+    <input type="text" ng-model="vacancy.companyName" />
+    </div>
+    <div class="line">
+    <label>Company salary:</label>
+    <input type="text" ng-model="vacancy.companySalary" />
+    </div>
+    <div class="line">
+    <label>City:</label>
+    <input type="text" ng-model="vacancy.city" />
+    </div>
+    <div class="line">
+    <label>Vacancy demands:</label>
+    <input type="text" ng-model="vacancy.demands" />
+    </div>
+    <div class="line">
+    <label>Vacancy terms:</label>
+    <input type="text" ng-model="vacancy.terms" />
+    </div>
+    <div class="line">
+    <label>Company description:</label>
+    <input type="text" ng-model="vacancy.companyDescription" />
+    </div>
+    <div class="line">
+    <label>Company address:</label>
+    <input type="text" ng-model="vacancy.address" />
+    </div>
 
-        <button ng-click="goToPage('second', vacancy);" style="float:right">Второй шаг</button> 
+    <button ng-click="goToPage('second', vacancy);" style="float:right">Второй шаг</button> 
     </fieldset>
 </script>
 
 <script type="text/ng-template" id="second">
     <fieldset>
-        <legend class="legend"> Создание новой вакансии - Шаг 2</legend>
-        <br/>
+    <legend class="legend"> Создание новой вакансии - Шаг 2</legend>
+    <br/>
 
-        <div class="line">
-            <label>Reward:</label>
-            <input type="number" ng-model="vacancy.reward" />
-        </div>
-        <div class="line">
-            <label>Expire:</label>
-            <input type="number" ng-model="vacancy.expire" />
-        </div>
+    <div class="line">
+    <label>Reward:</label>
+    <input type="number" ng-model="vacancy.reward" />
+    </div>
+    <div class="line">
+    <label>Expire:</label>
+    <input type="number" ng-model="vacancy.expire" />
+    </div>
 
-        <button ng-click="goToPage('first', vacancy);" style="float:left">На первый шаг</button>
-        <button ng-click="goToPage('third', vacancy);" style="float:right">Результат</button>
+    <button ng-click="goToPage('first', vacancy);" style="float:left">На первый шаг</button>
+    <button ng-click="goToPage('third', vacancy);" style="float:right">Результат</button>
     </fieldset>
 </script>
 

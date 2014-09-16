@@ -3,7 +3,7 @@ appControllers.controller('RespondsController', ['$scope', '$rootScope', '$q', f
         // Test value
         $scope.swat = 'watRespond';
         var load = function() {
-            
+
             var id = localStorage.id;
             var user = Parse.User.current();
 

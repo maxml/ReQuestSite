@@ -50,9 +50,10 @@ app.config(['$routeProvider',
         $rootScope.$apply(function() {
             $rootScope.user = user;
         });
-    };
-    
-    $rootScope.isNoStorage = function(){
+    }
+    ;
+
+    $rootScope.isNoStorage = function() {
         return (typeof (Storage) === "undefined");
     };
 });

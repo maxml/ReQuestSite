@@ -367,7 +367,7 @@ ol{
 
 #contact_socials li {
     float: left;
-/*     margin: 10px; */
+    /*     margin: 10px; */
     //margin-right: 10px;
 
 } 
@@ -537,7 +537,7 @@ body{
 #main{
     background-color: #DADADA; 
     width: 55%; 
- } 
+} 
 
 #col1, #main, #profile { 
     font-family: "Times New Roman", Times, serif; 
@@ -1182,20 +1182,20 @@ a{
     /* PROFILE: info and pic, button */
 
     #profile #pic{
-         width: 45%; 
-         height: 45%; 
+        width: 45%; 
+        height: 45%; 
 
-         top: 14px; 
-         right: 140px; 
+        top: 14px; 
+        right: 140px; 
     }
 
     .info {
-         left: 78%; 
+        left: 78%; 
     }
 
     #profile .info>#name{
         /* padding-left: 10px; */
-/*        position: absolute;*/
+        /*        position: absolute;*/
         /* margin-top: -36px; */
         /* margin-left: -80px; */
     }
@@ -1210,9 +1210,9 @@ a{
     .userDetails{
         position: relative;
         left: -4px
-/*        position: relative;
-         font-size: .7em; 
-         width: 20%; 
+            /*        position: relative;
+                     font-size: .7em; 
+                     width: 20%; 
 
          top: 2px; 
          right: 20px; */
@@ -1307,7 +1307,7 @@ a{
 
     #profile .info>#name{
         /* padding-left: 10px; */
-       /* position: absolute;*/
+        /* position: absolute;*/
         margin-top: -65px;
         /* margin-left: -70px; */
     }
@@ -1458,7 +1458,7 @@ a{
     }
 
     .info>#email{
-         font-size: .8em; 
+        font-size: .8em; 
     }
 
     .userDetails{
@@ -1504,9 +1504,9 @@ a{
 
     .footer_text_details {
         font-size: 35px;
-    
+
         padding-top: 8px;
-}
+    }
     #profile #pic{
         /* right: -16px; */
     }

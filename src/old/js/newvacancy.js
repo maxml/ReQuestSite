@@ -19,7 +19,7 @@ var expireDate;
 $(document).ready(function() {
 
     $('#new_vacancy').click(function() {
-                
+
         $('#main').empty();
         $('#main').load('../form/new_vacancy_step1.html #vacancy_form1 > *');
     });
