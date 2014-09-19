@@ -12,7 +12,6 @@ appControllers.controller('MyRequestsController', ['$scope', '$rootScope', '$q',
                     $scope.$apply(function() {
                         $scope.requests = convertRequestsToDtos(result);
                     });
-                    console.log(result);
                 }
             });
         };
@@ -38,10 +37,10 @@ appControllers.controller('MyRequestsController', ['$scope', '$rootScope', '$q',
             return result;
         };
 
-        $rootScope.id = '';
+        $rootScope.idRequest = '';
         $scope.linkClicked = function(id) {
             console.log("Id=" + id);
-            localStorage.id = id;
+            localStorage.idRequest = id;
             location.href = "#/details"
         };
     }]);

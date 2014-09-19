@@ -19,7 +19,11 @@ app.config(['$routeProvider',
                     templateUrl: 'partials/new-vacancy.html',
                     controller: 'NewVacancyController'
                 }).
-                when('/details', {
+                when('/request-details', {
+                    templateUrl: 'partials/details.html',
+                    controller: 'DetailsController'
+                }).
+                when('/respond-details', {
                     templateUrl: 'partials/details.html',
                     controller: 'DetailsController'
                 }).

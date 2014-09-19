@@ -7,8 +7,7 @@ appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', fu
         };
 
         $scope.fillDetailForm = function() {
-            var id = localStorage.id;
-            console.log(id);
+            var id = localStorage.idRequest;
 
             var query = new Parse.Query(Request);
             query.get(id, {
@@ -16,7 +15,6 @@ appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', fu
 
                     console.log(results);
                     $scope.vacancy.title = results.get("title");
-                    console.log("Title=" + $scope.vacancy.title);
                     $scope.vacancy.city = results.get("city");
                     $scope.vacancy.company = results.get("company");
                     $scope.vacancy.c_adress = results.get("company_address");

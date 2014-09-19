@@ -1,22 +1,22 @@
 <div class="outer" >
-    <div ng-repeat="request in requests" class="vacancy" ng-click="linkClicked(request.id)">
+    <div ng-repeat="respond in responds" class="vacancy" ng-click="linkClicked(respond.id)">
         <div class="row">
-            <span class="vacancy_company left">{{request.company}}</span>
-            <span class="vacancy_reward right">${{request.reward}}</span>
+            <span class="vacancy_company middle">{{respond.name}}</span>
+            <!--<span class="vacancy_reward right">${{request.reward}}</span>-->
         </div>
         <div class="row">
             <span class="vacancy_title middle">
-                {{request.title}}
+                {{respond.comment}}
             </span>
             <br/>
             <br/>
         </div>
         <div class="row"> 
             <span class="vacancy_expire right">
-                Wanted until: {{request.expireDate}}
+                Wanted until: {{respond.updateDate}}
             </span>
             <span class="vacancy_create left">
-                Created at: {{request.createDate}}
+                Created at: {{respond.createDate}}
             </span>
         </div>
         <div class="row">

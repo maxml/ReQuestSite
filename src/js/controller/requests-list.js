@@ -6,7 +6,6 @@ appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', f
                 $scope.$apply(function() {
                     $scope.requests = convertRequestsToDtos(result);
                 });
-//                console.log(result);
             }
         });
 
@@ -30,10 +29,10 @@ appControllers.controller('RequestsController', ['$scope', '$rootScope', '$q', f
             return result;
         };
 
-        $rootScope.id = '';
+        $rootScope.idRequest = '';
         $scope.linkClicked = function(id) {
             console.log("Id=" + id);
-            localStorage.id = id;
-            location.href = "#/details"
+            localStorage.idRequest = id;
+            location.href = "#/request-details"
         };
     }]);
