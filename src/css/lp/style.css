@@ -1,7 +1,7 @@
 body, p, div, h1, h2, h3, h4, h5, h6, table, tbody, tr, td, span, blockquote, a, abbr, address, cite, code, img, ul, ol, li, dl, dd, dt, form, label, fieldset, caption, input, textarea, button {
     border:0;
     outline:0;
-    font-family:Arial, Helvetica, Sans-Serif;
+    /*font-family:Arial, Helvetica, Sans-Serif;*/
     color:#000;
     vertical-align:baseline;
     list-style:none;
@@ -157,9 +157,9 @@ div.page_content {
     padding:25px 0 40px 25px
 }
 div#container h3.page_title {
-    font-family: 'OstrichSansBlack';
+    font-family: 'P22UndergroundCYPro-Heavy';
     margin-left:25px;
-    font-size:35px;
+    font-size:33px;
     color: #dd4b4e;
     border-bottom:1px solid #DADADA;
     text-shadow:1px 1px 2px #185477;
@@ -305,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
     color:#1d1d1d
 }
 h4.blue {
-    font-family: 'OstrichSansBlack';
+    /*font-family: 'OstrichSansBlack';*/
     color: #dd4b4e;
     text-shadow: 1px 1px 0px #84BBDB;
     font-size: 28px;
@@ -352,10 +352,11 @@ h4.blue {
     margin-left:68px;
 }
 .column_content h4 {
-    font-family: 'OstrichSansBlack';
+    font-family: 'P22UndergroundCYPro-Light';
     color: #dd4b4e;
     text-shadow:1px 1px 0px #84bbdb;
-    font-size:28px;      text-align: center;
+    font-size:27px;      
+    text-align: center;
 }
 .first {
     clear:left
@@ -407,6 +408,8 @@ blockquote {
     font-style:italic;
     padding:10px;
     margin:20px;
+    font: 1em 'P22UndergroundCYPro-Thing';
+    font-style: italic;
 }
 div.page img {
     padding:5px;
@@ -635,4 +638,21 @@ ul.sublist li a:hover {
 }
 .flex-control-nav {
     display:none;
+}
+
+small{
+    font: 1em 'P22UndergroundCYPro-Thing';
+}
+
+.page_content p{
+    font: 1em 'P22UndergroundCYPro-Thing';
+    line-height: 1.5;
+}
+
+h4{
+    font-family: 'P22UndergroundCYPro-Thing';
+}
+
+.works_filter{
+    font-family: 'P22UndergroundCYPro-Thing';
 }
