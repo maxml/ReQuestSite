@@ -22,6 +22,27 @@ body, p, div, h1, h2, h3, h4, h5, h6, table, tbody, tr, td, span, blockquote, a,
     margin-top:20px;
     padding-left:10px;
 }
+
+@font-face {
+    font-family:'P22UndergroundCYPro-Heavy';
+    src: url('../font/P22UndergroundCYPro-Heavy.otf');
+}
+
+@font-face {
+    font-family:'P22UndergroundCYPro-Light';
+    src: url('../font/P22UndergroundCYPro-Light.otf');
+}
+
+@font-face {
+    font-family:'P22UndergroundCYPro-Medium';
+    src: url('../font/P22UndergroundCYPro-Medium.otf');
+}
+
+@font-face {
+    font-family:'P22UndergroundCYPro-Thin';
+    src: url('../font/P22UndergroundCYPro-Thin.otf');
+}
+
 @font-face {
     font-weight: normal;
     font-style: normal;
@@ -59,7 +80,7 @@ div#sidebar {
     width:220px;
     height:100%;
     float:left;
-    background: #1a1a1a;
+    background: #2c2c2c;
     border-right:1px solid #2e2f2f;
     position:fixed
 }
@@ -94,10 +115,10 @@ ul#navigation li {
 }
 ul#navigation li a:link, ul#navigation li a:visited {
     text-decoration:none;
-    font-family:'OstrichSansBlack', Arial, sans-serif;
+    font-family: 'P22UndergroundCYPro-Light', Arial, sans-serif;
     margin-bottom:1px;
     width:auto;
-    font-size:20px;
+    font-size:21px;
     text-align:left;
     padding-left:10px !important;
     display:block;
@@ -109,13 +130,13 @@ ul#navigation li a:link, ul#navigation li a:visited {
     color: #eee;
 }
 ul#navigation li a:hover{
-    background: #525252;
+    background: #1b1b1b;
     color: white;
 }
 
 
 ul#navigation li a.active {
-    background: #3a3a3a;
+    background: #1b1b1b;
     color: white;
 }
 div#container {
