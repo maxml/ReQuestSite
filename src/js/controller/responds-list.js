@@ -6,13 +6,12 @@ appControllers.controller('RespondsController', ['$scope', '$rootScope', '$q', f
         var load = function () {
 
             var idRequest = localStorage.idRequest;
-            var user = Parse.User.current();
 
             var query = new Parse.Query(Responds);
 
-            console.log(idRequest);
-
             if (idRequest) {
+                console.log(idRequest);
+
                 var queryReq = new Parse.Query(Request);
                 queryReq.get(idRequest, {
                     success: function (request) {
@@ -24,8 +23,17 @@ appControllers.controller('RespondsController', ['$scope', '$rootScope', '$q', f
                     }
                 });
             } else {
+                var user = Parse.User.current();
+
                 query.equalTo("user", user);
-                getQuery(query);
+                query.find({
+                    success: function (result) {
+                        $scope.$apply(function () {
+                            $scope.responds = convertRespondsToDtos(result);
+                        });
+                        console.log(result);
+                    }
+                });
             }
 
         };
@@ -40,7 +48,7 @@ appControllers.controller('RespondsController', ['$scope', '$rootScope', '$q', f
                     console.log(result);
                 }
             });
-        }
+        };
 
         convertRespondsToDtos = function (parseResponds) {
             var result = [];

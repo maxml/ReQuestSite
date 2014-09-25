@@ -1,17 +1,18 @@
-appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
+appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', function ($scope, $rootScope, $q) {
 
         $scope.vacancy = {};
 
-        $scope.getRespondForm = function() {
+        $scope.getRespondForm = function () {
+            // localStorage.idRequest = '';
             location.href = "#/responds";
         };
 
-        $scope.fillDetailForm = function() {
+        $scope.fillDetailForm = function () {
             var id = localStorage.idRequest;
 
             var query = new Parse.Query(Request);
             query.get(id, {
-                success: function(results) {
+                success: function (results) {
 
                     console.log(results);
                     $scope.vacancy.title = results.get("title");
@@ -27,10 +28,10 @@ appControllers.controller('DetailsController', ['$scope', '$rootScope', '$q', fu
                     $scope.$apply();
 //                    showDetails();
                 },
-                error: function(error) {
+                error: function (error) {
                     console.log("Error: " + error + " " + error.message);
                 }
-            })
+            });
         };
         $scope.fillDetailForm();
 

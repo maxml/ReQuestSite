@@ -1,7 +1,7 @@
 var app = angular.module('requestApp', ['ngRoute', 'appControllers', 'angular-carousel', 'ngAnimate']);
 
 app.config(['$routeProvider',
-    function($routeProvider) {
+    function ($routeProvider) {
         $routeProvider.
                 when('/home', {
                     templateUrl: 'partials/home.html',
@@ -35,7 +35,7 @@ app.config(['$routeProvider',
                     redirectTo: 'home'
                 });
     }
-]).run(function($rootScope) {
+]).run(function ($rootScope) {
     Parse.initialize("V10TgoAKTJ7B8H8YjJhgucaXdGiDeROgxACn6aA2", "1gGbFOhUUrgeVp7JkqLP4XkOc8mBWkrQCU1uKAi8");
 
     User = Parse.Object.extend("User");
@@ -51,14 +51,22 @@ app.config(['$routeProvider',
         user.name = currentParseUser.get("name");
         user.pic = currentParseUser.get("avatar");
 
-        $rootScope.$apply(function() {
+        $rootScope.$apply(function () {
             $rootScope.user = user;
         });
     }
     ;
 
-    $rootScope.isNoStorage = function() {
+    $rootScope.isNoStorage = function () {
         return (typeof (Storage) === "undefined");
+    };
+
+    $rootScope.isOnRespondPage = function () {
+        if (!location.href.match(/\responds/)) {
+            localStorage.idRequest = '';
+            location.href = "#/responds";
+        }
+        location.reload();
     };
 });
 
