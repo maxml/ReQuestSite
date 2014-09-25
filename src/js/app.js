@@ -61,3 +61,34 @@ app.config(['$routeProvider',
         return (typeof (Storage) === "undefined");
     };
 });
+
+
+
+//Dinamic title
+angular.module('publicRegApp', [])
+
+  .controller('CompanyNameController', function ($scope) {
+    $scope.title = 'ReQuest - recruititng platform';
+
+
+    $scope.onSearchHome = function(){
+        console.log("clicked");
+        $scope.title = "ReQuest - recruititng platform";
+    };
+    
+    $scope.onSearchAbout = function(){
+        console.log("clicked");
+        $scope.title = "ReQuest - About";
+    };
+
+    $scope.onSearchPortfolio = function(){
+        console.log("clicked");
+        $scope.title = "ReQuest - Portfolio";
+    };
+    
+    $scope.onSearchIndustries = function(){
+        console.log("clicked");
+        $scope.title = "ReQuest - Industries";
+    };
+
+  });
