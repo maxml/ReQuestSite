@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)http://www.egrappler.com/onepager/demo.html# -->
-<html ng-app='publicRegApp' ng-controller='CompanyNameController' lang="en" class="csstransforms csstransforms3d csstransitions">
+<html lang="en" class="csstransforms csstransforms3d csstransitions">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta charset="UTF-8">
-        
+
         <!--Title-->
-        <title>{{title}}</title>
-        
+        <title>ReQuest</title>
+
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        
+
         <!-- FAV AND TOUCH ICONS -->
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.html">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.html">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.html">
         <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.html">
-        
+
         <!--ICON TITLE-->
         <link rel="shortcut icon" href="ico/favicon.png">
-        
+
         <!-- CSS -->
         <link rel="stylesheet" href="css/lp/style.css" media="screen">
         <link rel="stylesheet" href="css/lp/media-queries.css">
         <link rel="stylesheet" href="css/lp/flexslider.css" type="text/css" media="screen">
         <link href="css/lp/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen">
         <link href="css/lp/tipsy.css" rel="stylesheet" type="text/css" media="screen">
-        
+
         <!--Dinamic title-->
         <script src="js/angular.min.js"></script>
         <script src="js/app.js"></script>
@@ -40,11 +40,11 @@
                 <a href="#" id="logo">ReQuest</a>
                 <!-- navigation menu -->
                 <ul id="navigation">
-                    <li><a href="#home" class="active" ng-click="onSearchHome()">Home</a></li>
-                    <li><a href="#about" class="" ng-click="onSearchAbout()">About Us</a></li>
-                    <li><a href="#portfolio" class="" ng-click="onSearchPortfolio()">Portfolio</a></li>
-                    <li><a href="#industries" class="" ng-click="onSearchIndustries()">Industries</a></li>
-                    <li><a href="article/" target="new_blanck" class="">Article</a></li>
+                    <li><a href="#home" class="active" ng-click="onSearchHome()">Главная</a></li>
+                    <li><a href="#about" class="" ng-click="onSearchAbout()">Про нас</a></li>
+                    <li><a href="#portfolio" class="" ng-click="onSearchPortfolio()">Портфолио</a></li>
+                    <li><a href="#industries" class="" ng-click="onSearchIndustries()">Наши успехи</a></li>
+                    <li><a href="article/" target="new_blanck" class="">Статьи</a></li>
                     <!--<li><a href="#myclients" class="">Our Clients</a></li>-->
                     <!--<li><a href="#contact" class="">Contact</a></li>-->
                 </ul>
@@ -59,102 +59,90 @@
                             <!-- slider -->
                             <ul class="slides">
                                 <li style="width: 100%; float: left; margin-right: -100%; display: list-item;"> <img src="img/lp/01.jpg" alt="">
-                                    <p class="flex-caption"> Super-awesome simplistic-styled easily customizable one page scrolling portfolio
-                                        template</p>
+                                    <p class="flex-caption"> Мы можем гордиться своим проектом - мы общались с лучшими!</p>
                                 </li>
                                 <li style="width: 100%; float: left; margin-right: -100%; display: none;"> <img src="img/lp/02.jpg" alt="">
-                                    <p class="flex-caption"> With Special Customization this template is perfect to be used as a blog template
-                                        also</p>
+                                    <p class="flex-caption"> В нашем блоге представлена только самая интересная информация</p>
                                 </li>
                                 <li style="width: 100%; float: left; margin-right: -100%; display: none;"> <img src="img/lp/03.jpg" alt="">
-                                    <p class="flex-caption"> Fully responsive layout supported on all devices including tablet and smartphones</p>
+                                    <p class="flex-caption"> Мы в тренде - ждите наши мобильные клиенты!</p>
                                 </li>
-                                <li style="width: 100%; float: left; margin-right: -100%; display: none;"> <img src="img/lp/04.jpg" alt="">
-                                    <p class="flex-caption"> Purchase it now to grab it and use it on your work and make experiments with it</p>
-                                </li>
-                                <li style="width: 100%; float: left; margin-right: -100%; display: none;"> <img src="img/lp/05.jpg" alt="">
-                                    <p class="flex-caption"> Fully responsive layout supported on all devices including tablet and smartphones</p>
-                                </li>
+                                <!--                                <li style="width: 100%; float: left; margin-right: -100%; display: none;"> <img src="img/lp/04.jpg" alt="">
+                                                                    <p class="flex-caption"> Purchase it now to grab it and use it on your work and make experiments with it</p>
+                                                                </li>
+                                                                <li style="width: 100%; float: left; margin-right: -100%; display: none;"> <img src="img/lp/05.jpg" alt="">
+                                                                    <p class="flex-caption"> Fully responsive layout supported on all devices including tablet and smartphones</p>
+                                                                </li>-->
                             </ul>
-                            <ol class="flex-control-nav">
-                                <li>
-                                    <a class="active">1</a>
-                                </li>
-                                <li>
-                                    <a class="">2</a>
-                                </li>
-                                <li>
-                                    <a class="">3</a>
-                                </li>
-                                <li>
-                                    <a class="">4</a>
-                                </li>
-                                <li>
-                                    <a class="">5</a>
-                                </li>
-                            </ol>
-                            <ul class="flex-direction-nav">
-                                <li>
-                                    <a class="prev" href="#"></a>
-                                </li>
-                                <li>
-                                    <a class="next" href="#"></a>
-                                </li>
-                            </ul>
+                            <!--                            <ol class="flex-control-nav">
+                                                            <li>
+                                                                <a class="active">1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="">2</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="">3</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="">4</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="">5</a>
+                                                            </li>
+                                                        </ol>
+                                                        <ul class="flex-direction-nav">
+                                                            <li>
+                                                                <a class="prev" href="#"></a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="next" href="#"></a>
+                                                            </li>
+                                                        </ul>-->
                         </div>
                         <div class="space"> </div>
                         <div class="clear"> </div>
                         <!-- services -->
                         <div class="one_half first">
                             <div class="column_content">
-                                <h4> Coded with Love!</h4>
+                                <h4> Нас любят!</h4>
                                 <img src="img/lp/coded-with-love.png" class="left no_border" alt="" style="margin-top: 10px;
                                      margin-right: 10px">
-                                <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-                                        felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-                                        Quisque suscipit fermentum sodales.</small></p>
+                                <p> <small>Наш сервис реализует реккомендательную или реферальную модель на рынке рекрутинга. Один рекрутер выставляет вакансию, остальные пользователи системы могут предлжить своего специалиста. Рекрутер, в свою очередь, может быть реккомендателем на других вакансиях</small></p>
                             </div>
                         </div>
                         <div class="one_half last">
                             <div class="column_content">
-                                <h4> Responsive Layout</h4>
+                                <h4> Гарантия!</h4>
                                 <img src="img/lp/responsive.png" class="left no_border" alt="" style="margin-top: 10px;
                                      margin-right: 10px">
-                                <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-                                        felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-                                        Quisque suscipit fermentum sodales.</small></p>
+                                <p> <small>Сервис ReQuest предоставляет реальную возможность заработать, не выходя из дома. Все, что Вам понадобится - это Ваш компьютер и время! А мы, в свою очередь, гарантируем, что Вы получите свои деньги!</small></p>
                             </div>
                         </div>
                         <div class="space"> </div>
                         <div class="one_half first">
                             <div class="column_content">
-                                <h4> Perfect for Portfolios</h4>
+                                <h4> Все просто: для рекрутера!</h4>
                                 <img src="img/lp/for-portfolio.png" class="left no_border" alt="" style="margin-top: 10px;
                                      margin-right: 10px">
-                                <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-                                        felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-                                        Quisque suscipit fermentum sodales.</small></p>
+                                <p> <small>Вы платите за выставление вакансии у нас на сайте, выставляете вакансию, ставите фонд, который готовы заплатить - и вуаля! - Вы получаете к Вашим услугам только высококвалифицированные кадры и только на Вашу вакансию!</small></p>
                             </div>
                         </div>
                         <div class="one_half last">
                             <div class="column_content">
-                                <h4> Easily Tunable</h4>
+                                <h4> Все просто: для рекомендателя!</h4>
                                 <img src="img/lp/customizable.png" class="left no_border" alt="" style="margin-top: 10px;
                                      margin-right: 10px">
-                                <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-                                        felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-                                        Quisque suscipit fermentum sodales.</small></p>
+                                <p> <small>После того, как Вы вниматеьно прочитали вакансию, Вы советуете специалиста, с которым знакомы. После того, как Ваш специалист прошел собеседывание, Вы получаете деньги!</small></p>
                             </div>
                         </div>
                         <div class="space"> </div>
                         <div class="one_half first">
                             <div class="column_content">
-                                <h4> Image Gallery </h4>
+                                <h4> Web and Mobile </h4>
                                 <img src="img/lp/image-gallery.png" class="left no_border" alt="" style="margin-top: 10px;
                                      margin-right: 10px">
-                                <p> <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at feugiat
-                                        felis. Ut faucibus molestie turpis, sit amet scelerisque ipsum scelerisque quis.
-                                        Quisque suscipit fermentum sodales.</small></p>
+                                <p> <small>Мы разрабатываем нашу систему одновременно и под веб и под мобильный устройства. iOS- и Android-версии нашего сервиса скоро будут доступны! Наши программисты очень этого хотят!</small></p>
                             </div>
                         </div>
                         <div class="one_half last">
@@ -172,71 +160,67 @@
                 </div>
                 <div class="page" id="about">
                     <!-- page about -->
-                    <h3 class="page_title"> About Us</h3>
+                    <h3 class="page_title"> Про нас</h3>
                     <div class="page_content">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.</p>
-                        <h4 class="blue"> Why Choose Us</h4>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.</p>
-                        <blockquote> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                            <p> <small><b>Sarfraz Shoukat</b> - Owner <a href="#">Greepit.com</a></small></p>
+                        <p> ReQuest - это сервис для автоматизированного поиска персонала за вознаграждение; краудсорсинговый рекрутинговый сервис, который автоматизирует процесс получения качественных кадров на рабочее место за счет рекомендаций. Позволяет сократить 40% времени работы рекрутера, автоматически избегая просматривания резюме, которые не соответствуют вакансии.</p>
+                        <h4 class="blue"> Почему именно мы?</h4>
+                        <p> Потому что мы ускоряем процесс закрытия вакансии. Мы обязательно даем соответствующие требованиям резюме кандидатов
+                            Дополнительный доход от нашего сервиса за закрытые вакансии может при постоянной работе заменить основной
+                        </p>
+                        <blockquote> Мобильная платформа - все программные приложения для рекрутинга станут доступными рекрутерам с мобильной платформы.
+                            <br>
+                            Рефералы – будут продолжать «поставлять» наибольший объем талантливых сотрудников.
+                            <br/>
+                            
+                            <p><br/> <small><b>Джон Салливан,</b>  всемирно известный авторитет в сфере HR, автор более 900 статей и 10 книг
+                                </small></p>
                         </blockquote>
                         <div class="clear"> </div>
                     </div>
                 </div>
                 <div class="page" id="portfolio">
                     <!-- page portfolio -->
-                    <h3 class="page_title"> Portfolio</h3>
+                    <h3 class="page_title"> Наш сервис!</h3>
                     <div class="page_content">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+<!--                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
                         <ul id="works_filter">
                             <li><a href="#" data-filter="*" class="selected">Show All</a></li>
-                            <li><a href="#" data-filter=".css">CSS</a></li>
-                            <li><a href="#" data-filter=".html_php">HTML / PHP</a></li>
-                            <li><a href="#" data-filter=".js">JavaScript</a></li>
+                            <li><a href="#" data-filter=".web">Web</a></li>
+                            <li><a href="#" data-filter=".ios">iOS</a></li>
+                            <li><a href="#" data-filter=".an">Android</a></li>
                         </ul>
                         <div class="clear"> </div>
                         <div id="works" class="isotope" style="position: relative; overflow: hidden; height: 540px;">
                             <!-- works -->
-                            <a rel="prettyPhoto[gallery]" href="img/lp/01(1).jpg"> <img class="work js isotope-item" src="img/lp/01(1).jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/03(1).jpg"> <img class="work css isotope-item" src="img/lp/03(1).jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(241px, 0px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/04(1).jpg"> <img class="work html_php isotope-item" src="img/lp/04(1).jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(482px, 0px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/05(1).jpg"> <img class="work html_php isotope-item" src="img/lp/05(1).jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 180px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/06.jpg"> <img class="work css isotope-item" src="img/lp/06.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(241px, 180px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/07.jpg"> <img class="work js isotope-item" src="img/lp/07.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(482px, 180px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/08.jpg"> <img class="work html_php isotope-item" src="img/lp/08.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 360px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/09.jpg"> <img class="work js isotope-item" src="img/lp/09.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(241px, 360px, 0px);"> </a><a rel="prettyPhoto[gallery]" href="img/lp/10.jpg"> <img class="work html_php isotope-item" src="img/lp/10.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(482px, 360px, 0px);"> </a> </div>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/1.jpg"><img class="work web isotope-item" src="img/lp/gallery/1.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/2.jpg"> <img class="work web isotope-item" src="img/lp/gallery/2.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(241px, 0px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/3.png"> <img class="work ios isotope-item" src="img/lp/gallery/3.png" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(482px, 0px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/4.jpg"> <img class="work web isotope-item" src="img/lp/gallery/4.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 180px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/5.png"> <img class="work ios isotope-item" src="img/lp/gallery/5.png" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(241px, 180px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/6.png"> <img class="work ios isotope-item" src="img/lp/gallery/6.png" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(482px, 180px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/7.png"> <img class="work ios isotope-item" src="img/lp/gallery/7.png" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 360px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/8.jpg"> <img class="work an isotope-item" src="img/lp/gallery/8.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(241px, 360px, 0px);"> </a>
+                            <a rel="prettyPhoto[gallery]" href="img/lp/gallery/9.jpg"> <img class="work an isotope-item" src="img/lp/gallery/9.jpg" alt="" style="position: absolute; left: 0px; top: 0px; transform: translate3d(482px, 360px, 0px);"> </a> </div>
                         <div class="clear"> </div>
                     </div>
                 </div>
 
                 <div class="page" id="industries">
                     <!-- page industries -->
-                    <h3 class="page_title"> Industries We Serve!</h3>
+                    <h3 class="page_title"> Наши успехи!</h3>
                     <div class="page_content">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p> Мы являемся лучшим стартапом Киева по версии "Золотой байт 2013". Также мы питчились перед</p>
                         <div class="space"> </div>
                         <div class="clear"> </div>
                         <ul class="sublist">
-                            <li><a href="#">Freebies</a></li>
-                            <li><a href="#">Category Names</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Akay Akagunduz</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Themeforest</a></li>
-                            <li><a href="#">Reviews</a></li>
-                            <li><a href="#">Links</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                            <li><a href="#">Others</a></li>
-                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Growth Up</a></li>
+                            <li><a href="#">Happy Farm</a></li>
+                            <li><a href="#">EastLabs</a></li>
+                            <li><a href="#">Wannabiz</a></li>
                         </ul>
+                        <p> и это только инкубаторы!
                         <div class="clear"> </div>
                     </div>
                 </div>
